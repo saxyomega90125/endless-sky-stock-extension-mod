@@ -1,0 +1,382 @@
+mission "sxt Visit Verge"
+	landing
+	repeat
+	priority
+	source Verge
+	invisible
+	deadline 1
+	to offer
+		not "sxt Visit Verge: done"
+	on offer
+		conversation
+			`	The landing pads are in a large cavern chamber beneath a colossal overhang and large ships must simply set down on the ground in the valley, so landing is a bit tricky either way.`
+			`	Once you leave your ship and head toward the spaceport (if you can call it that), you see a dozen people armed with rifles moving toward you.`
+			choice
+				`	(Raise your hands in the air.)`
+					goto handsup
+				`	(Draw your handgun and take cover.)`
+			`	"We aren't here to mess around!" a woman yells to you. "You have three options! Leave, put your gun down, or get killed!"`
+			choice
+				`	(Set down your gun and put your hands up.)`
+					goto handsup
+				`	(Fire a warning shot.)`
+					goto shot
+				`	(Retreat to your ship.)`
+					goto run
+			label shot
+			`	Almost as soon as you fire, a shot hits your chest, and you drop to the ground. There isn't any pain, but you notice that you are suddenly very cold.`
+				die
+			
+			label handsup
+			`	They seem to ignore your gesture for a moment, which makes you very nervous, but then they move their weapons to their hips and approach you. Once they are within reasonable range, a woman yells to you.`
+			branch fw notfw
+				has "event: joined the free worlds"
+			label notfw
+			branch rp notrp
+				has "event: joined the navy"
+			label notrp
+			branch ss merch
+				has "event: joined the syndicate"
+			label merch
+			`	"Identify yourself!"`
+			choice
+				`	"Captain <last>, of the <ship>!"`
+					goto cm
+				`	"I'm just a merchant!"`
+					goto spec
+			label fw
+			`	"Identify yourself!"`
+			choice
+				`	"Captain <last>, of the <ship>!"`
+					goto captf
+				`	"I'm a Free Worlds officer!"`
+					goto officerf
+			label rp
+			`	"Identify yourself!"`
+			choice
+				`	"Captain <last>, of the <ship>!"`
+					goto captr
+				`	"I'm a Republic Navy officer!"`
+					goto officerr
+			label ss
+			`	"Identify yourself!"`
+			choice
+				`	"Captain <last>, of the <ship>!"`
+					goto capts
+				`	"I'm a member of the Syndicate!"`
+					goto officers
+
+			label capt
+			`	"Who do you work for?"`
+			`	You reply, "I'm an independent captain!"`
+			`	The group moves closer and the woman orders them to lower weapons. "I haven't seen you here before. What do you want?"`
+			choice
+				`	"I was chased here by pirates."`
+					goto chased
+				`	"I'm just exploring."`
+					goto exp
+			label captf
+			`	"Who do you work for?"`
+			`	You reply, "I'm an officer of the Free Worlds!"`
+				goto officerf
+			label officerf
+			`	The group moves closer and the woman orders them to lower weapons. "Aren't you a little far from home? What do you want here?"`
+			choice
+				`	"I was chased here by pirates."`
+					goto chased
+				`	"I'm just exploring."`
+					goto exp
+				`	"I was patrolling the regoin - somebody has to."`
+					goto patrol
+			label captr
+			`	"Who do you work for?"`
+			`	You reply, "I'm an officer of the navy!"`
+				goto officerr
+			label officerr
+			`	The group moves closer and the woman orders them to lower weapons. "Haven't seen one of those in a while. What do you want?"`
+			choice
+				`	"I was chased here by pirates."`
+					goto chased
+				`	"I'm just exploring."`
+					goto exp
+				`	"My job is to protect merchants from pirates."`
+					goto job
+			label capts
+			`	"Who do you work for?"`
+			`	You reply, "I'm a member of the Syndicate!"`
+				goto officers
+			label officers
+			`	The group moves closer, weapons still up. "Aren't you a little far from home? What do you want here?"`
+			choice
+				`	"I was chased here by pirates."`
+				`	"I'm just exploring."`
+			`	"On second thought," the woman says, "I don't really care. You aren't here to annex us and you aren't a pirate, so you aren't an enemy, but no member of the Syndicate is a friend of ours."`
+			`	"Why?" you ask.`
+			`	"You really are far from home. This settlement is basically a commune. We don't like your type much."`
+			`	"Look, I'm not here on business," you respond.`
+			`	"Good - you won't find any. The settlement as a whole manages some credits for what little trade we can get, but there's no business as you see it. You're welcome to visit our humble village, but I'm sure you'll find it very boring."`
+			`	She leads her group back toward the port.`
+			choice
+				`	(Continue.)`
+					goto nextnext
+				`	"You know, we aren't all like you think."`
+			branch splotdone
+				has "syndicate plot done"
+			`	She stops and turns. "Oh, really?"`
+			choice
+				`	"I started out a textile worker in the Dirt Belt."`
+					goto dirt
+			label splotdone
+			`	She stops and turns. "Oh, really?"`
+			choice
+				`	"I started out a textile worker in the Dirt Belt."`
+					goto dirt
+				`	"I fought hard against people like that."`
+			`	You continue, "Some people in the Syndicate, the crooks you think of, were willing to stab people like me in the back for a quick profit. They were the ones who bombed Martini and Geminus. They caused the war between the Republic and Free Worlds. I was in the fleet that brought them down."`
+			`	She looks down for a moment. "Well, I may not agree with the way the Syndicate does things, but you have my respect for what you did."
+				goto nexts
+			label dirt
+			`	You continue, "I joined the Syndicate because they were good to me, a simple independent captain back then. We aren't all crooks - we try our best for our people, same as you."`
+			`	"I don't exactly agree with your way of going about it," she replies, "but at least you aren't some high-born snob."`
+				goto nexts
+			label nexts
+			`	"I'm Margaret Wheeler, leader of the local minutemen."
+			choice
+				`	"Minutemen?"`
+				`	"What, a militia?"
+			`	"The name 'minutemen' has popped up a few times in history - started in ancient America. It refers to volunteers, I suppose a militia, who can be ready for a fight in a minute."`
+			`	"Why so quick?" you ask.`
+			`	She responds, "Every now and then a pirate ship lands here with a captain looking for tribute. We don't give tribute."`
+			choice
+				`	"I see."`
+					goto convends
+				`	"Why don't they just threaten to bombard you?"`
+			`	"Torpedoes are expensive," she says. "Even the pirates out here are poor, and we don't have enough money in the whole settlement to cover the cost of scaring us into giving it."`
+				goto convends
+			label convends
+			`	"Well," she says, "You might get some odd looks - we never see Syndicate here - but you won't be turned away."`
+				goto nextnext
+			
+			label chased
+			`	"In that case," the woman replies, "sorry for the welcome wagon. This is a dangerous little corner of space we live in. We don't trust visitors we don't recognize."
+			`	"Understandable," you say.`
+				goto next
+			label exp
+			`	"Strange choice of places," the woman replies. "Sorry for the welcome wagon; this is a dangerous little corner of space we live in. We don't trust visitors we don't recognize."
+			`	"Understandable," you say.`
+				goto next
+			label patrol
+			`	The woman laughs briefly. "The Free Worlds, patrol here?"`
+			`	You reply, "The Republic doesn't do it."`
+			`	"I wouldn't expect them to be happy if you do, either," she says, "but that isn't my problem. Sorry for the welcome wagon; this is a dangerous little corner of space we live in. We don't trust visitors we don't recognize."
+			`	"Understandable," you say.`
+				goto next
+			label job
+			`	"Tell that to the rest of the navy," she says sarcastically. "But, if you want to start, we won't stop you. Sorry for the welcome wagon. This is a dangerous little corner of space we live in. We don't trust visitors we don't recognize."
+			`	"Understandable," you say.`
+				goto next
+			
+			label next
+			`	"I'm Margaret Wheeler," she says, offering a handshake, "leader of the local minutemen."`
+			choice
+				`	"Minutemen?"`
+				`	"What, a militia?"
+			`	"The name 'minutemen' has popped up a few times in history - started in ancient America. It refers to volunteers, I suppose a militia, who can be ready for a fight in a minute."`
+			`	"Why so quick?" you ask.`
+			`	She responds, "Every now and then a pirate ship lands here with a captain looking for tribute. We don't give tribute."`
+			choice
+				`	"I see."`
+					goto convend
+				`	"Why don't they just threaten to bombard you?"`
+			`	"Torpedoes are expensive," she says. "Even the pirates out here are poor, and we don't have enough money in the whole settlement to cover the cost of scaring us into giving it."`
+				goto convend
+			label convend
+			`	"Well," she says, "You might get some odd looks - what few outsiders we see here, we usually recognize - but you'll be welcome."`
+				goto nextnext
+			
+			label nextnext
+			`	You walk into the port, more of a bazaar than anything. The frigid air acts as a natural refrigerator for the foods. Interestingly, no prices are posted; the merchants are only interested in trades for other goods.`
+			branch liked done
+				or
+					and
+						has "event: joined the free worlds"
+						not "fw did not rescue defector"
+					has "event: joined the navy"
+			label liked
+			`	Shortly after you meander into the market, a produce vendor calls you over. "Not everyone here has respect for a uniform like that, but I do." He hands you an apple. "On me."`
+			choice
+				`	"Thank you."`
+					goto done
+				`	"How do you have fruit here?"`
+			`	"Sometimes we get a crate or two of citrus shipped here from trading," he says, "But we grow temperate fruit in arboretum chambers deeper in the village tunnels. My wife grew that apple."`
+			choice
+				`	"Thank you."`
+					goto done
+				`	"Give her my compliments."`
+					goto done
+			label done
+			`	You wander for a while, but without conventional commerce or any services for your ship, there really isn't much for you to do."`
+				accept
+			label run
+			`	You keep your gun pointed toward the group and hasten back to your ship, then take off as soon as you can. Evidently the people here are less than friendly.`
+				flee
+
+mission "sxt Verge Delivery"
+	invisible
+	name "Trade between New Tibet and Verge"
+	description "You have agreed to carry a load of tools and clothing to <destination>, and return to <origin> with 2 tons of iron."`
+	destination Verge
+	source "New Tibet"
+	cargo "Tools and Clothes" 1
+	to offer
+		has "sxt Visit Verge: done"
+		"cargo space" >= 2
+	on offer
+		conversation
+			`	When you're returning to your ship, you're stopped by a man in a dress shirt. "Excuse me," he says, "would you be interested in a cargo job?"`
+			choice
+				`	"That depends on what it is."`
+				`	"Why do I have a bad feeling?"`
+				`	"No, thanks."`
+			`	"Oh, it's nothing illegal," he says. "I work for one of the factories here. We make hand tools like wrenches and pliers, and export them to other Dirt Belt worlds."`
+			`	He continues, "Unfortunately the factories here on <origin> have to import most of our iron. One of our smaller sources is a planet called <destination>."`
+			`	"I've been there," you reply.`
+			`	"Ah, I see. Well, we have a shipment of tools and clothing to send to them in return for a shipment of two tons of iron. Would you be willing to take the job? We'd pay you 2000 credits when you return with the iron."`
+			choice
+				`	"Sure."`
+					goto took
+				`	"Why isn't this on the job board?"`
+				`	"No, thanks."`
+					decline
+			`	"Most captains aren't willing to go to <system> on account of the pirates and smugglers out of Chasm, especially for such a small job. You seemed like the exploring type though, and if you've been to Verge before I guess I was right. Well, would you be willing to help us with this trade?"`
+			choice
+				`	"I'll do it."`
+					goto took
+				`	"Well, sorry, I'm not interested."`
+					decline
+			label took
+			`	"Excellent," the man replies, offering a handshake. "Our shipment is only a few crates, so we won't hold your ship up at all."`
+				accept
+mission "sxt smuggling offer"
+	name "Land on <planet>"
+	description "You received an offer to smuggle goods to New Tibet. Land on <destination> if you are interested."
+	destination Chasm
+	source Verge
+	landing
+	clearance
+	deadline 1
+	to offer
+		or
+			has "sxt Verge Delivery: done"
+			has "sxt Verge Delivery: active"
+	on offer
+		conversation
+			`	A few men from the village are waiting for you and they promptly offload the tools and clothing and replace it with four 500kg crates of iron.`
+			`	Once you return to your ship, you see a transmission from a ship in orbit.`
+			choice
+				`	(Continue.)`
+			`	"Captain, I have a proposition for you. I understand you'll be heading to New Tibet. I have some cargo that needs to reach there, and I need you to help deliver it. Meet me on Chasm within two hours if you're interested - I'll hail you when you approach."`
+				accept
+mission "sxt smuggling 1"
+	name "Smuggle goods to <planet>"
+	description "You have agreed to smuggle <cargo> to the spaceport on <planet>."
+	cargo "Smuggled Cargo" 2
+	source Chasm
+	destination "New Tibet"
+	landing
+	to offer
+		or
+			has "sxt smuggling offer: active"
+			has "sxt smuggling offer: done"
+	on offer
+		conversation
+			`	When you approach <origin>, you receive a hail and follow the transmitting ship as it goes in to land.`
+			`	"Good day, captain," a voice says.`
+			`	"You have a job for me?" you ask.`
+			`	"Yes," the voice replies. "Something I would like to discuss in person. Dock once we land."`
+			`	The ship is merely a Fury, so its crew is three at most, and it is flying merchant colors, so you feel confident enough to dock as instructed.`
+			`	On the other side of the airlock you are greeted by a man and a crewman who look like any other merchants.`
+			`	"Captain," he says, "I'm Captain Moreno. This is my crewman, Jacob."`
+			choice
+				`	"Captain <last>."`
+				`	"So that job."`
+			`	"Right," Captain Moreno says, "I have two tons of goods I want you to take to <planet>."`
+			`	You ask, "What, specifically?"`
+			`	"Better for you not to know," Captain Moreno replies, "but I will at least tell you that they won't get you any fines even if you're caught with them."`
+			choice
+				`	"What assurance do I have?"`
+				`	"What do I get?"`
+					goto pay
+				`	"I don't like the sound of that."`
+					goto decline
+			`	"If they would get you fined, you'd rat me out in a heartbeat. I'm a smuggler, not a pirate. I have to stay under the radar to stay in business, and if these risked blowing that for me I wouldn't offer you the job."`
+				goto pay
+			label pay
+			`	"Payment is 4,000 credits, paid on delivery. You interested?"`
+			choice
+				`	"Only if you tell me what it is."`
+				`	"Sounds good."`
+					launch
+				`	"No."`
+					goto decline
+			`	Captain Moreno thinks for a moment. "Well, alright," he says. "It's heavy metal, stolen from a Syndicate shipment headed to the Deep. They probably don't even know it's missing yet. So, you want to take it on?"`
+			choice
+				`	"Seems like a lot of trouble for metal."`
+				`	"Sure."`
+					launch
+				`	"No."`
+					goto decline
+			`	"It isn't just any metal," he says. "It's plutonium-238."`
+			`	Your reaction of shock is clearly visible.`
+			`	Moreno elaborates, "Nothing usable in any weapons at all, just RTG fuel, but that stuff gets expensive so it does great on the black market. Sound good?"`
+			choice
+				`	"Works for me."`
+					launch
+				`	"I don't like it."`
+					goto decline
+			label decline
+			`	"Alright, I understand," Captain Moreno says. "Have a nice day, captain."`
+				flee
+	on complete
+		"smuggled" ++
+		dialog	`A few men hurriedly offload your smuggled cargo. As they leave, one of them slips you three credit chips totaling <payment>.`
+		payment 4000
+mission "sxt smuggler 1"
+	source Chasm
+	destination "New Tibet"
+	landing
+	invisible
+	to offer
+		or
+			has "sxt smuggling offer: active"
+			has "sxt smuggling offer: done"
+	npc
+		government Merchant
+		personality uninterested fleeing timid
+		system Coxa
+		ship Fury Theseus
+	npc
+		government Pirate
+		personality staying plunders waiting
+		system Coxa
+		ship Berserker "Bloody Mary"
+	npc
+		government Republic
+		personality uninterested staying heroic entering
+		system Coxa
+		ship Gunboat "R.N.S. Danube"
+
+mission "sxt Verge Deliveryb"
+	landing
+	name "Trade between New Tibet and Verge"
+	description "You have agreed to carry a load of tools and clothing to <destination>, and return to <origin> with two tons of iron."`
+	source Verge
+	destination "New Tibet"
+	cargo "Iron" 2
+	to offer
+		or
+			has "sxt Verge Delivery: done"
+			has "sxt Verge Delivery: active"
+	on complete
+		dialog `You offload the two tons of iron and receive your payment of <payment>.`
+		payment 2000

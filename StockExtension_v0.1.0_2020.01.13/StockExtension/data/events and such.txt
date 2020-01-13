@@ -1,0 +1,30 @@
+varaint "Scout" "Scout (Jump)"
+	outfits
+		"Electron Beam"
+		"Anti-Missile Turret"
+		"Dwarf Core"
+		"LP072a Battery Pack"
+		"D23-QP Shield Generator"
+		"Catalytic Ramscoop"
+		"A250 Atomic Thruster"
+		"X3200 Ion Steering"
+		"Jump Drive"
+
+event "sxt New Boston Upgrade"
+	date 6 10 3014
+	planet "New Boston"
+		shipyard "New Boston Upgrade"
+		outfitter "New Boston Upgrade"
+mission "sxt New Boston Upgrade"
+	priority
+	landing
+	invisible
+	source "New Boston"
+	deadline 1
+	to offer
+		has "event: sxt New Boston Upgrade"
+	on offer
+		conversation
+			`	As you leave your ship, you notice that the spaceport has more business than it did when you left. There are more ships landed than there used to be, and it looks like the mechanics who sold you your first ship have a few heavy shuttles and some new outfits to their stock. It seems like things are still going well for <planet>, despite the tense political climate of the galaxy around it.`
+				decline
+

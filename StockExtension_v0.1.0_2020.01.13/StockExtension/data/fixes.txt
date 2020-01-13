@@ -1,0 +1,278 @@
+# First up is a fix to the start. It makes no sense to me that every penny you have right from the start is the bank's - that would mean you were broke beforehand.
+# This makes it so that you had saved 16754 credits before you took out that mortgage.		
+start
+	date 16 11 3013
+	system "Rutilicus"
+	planet "New Boston"
+	account
+		credits 496754
+		score 400
+		mortgage Mortgage
+			principal 480000
+			interest 0.004
+			term 365
+	set "license: Pilot's"
+
+
+# Typo fixes and other minor stuff next
+
+# First, Trove's description called it a moon when it was a planet. Instead of changing the description, I simply made it correct. See map for specifics.
+
+planet Helheim
+	description `Helheim is not a pleasant place. Much of the surface is volcanic, pockmarked with craters and steam vents leading deep into the planet's crust. The air is slightly caustic, but breathable. However, it is also a world rich in easily accessible deposits of nickel, aluminum, and magnesium. The mining industry here has been booming for centuries, and in all of the Deep it is the one world where work is never hard to find - if you are willing to face the health risks and the lack of green and growing things.`
+
+planet Sunracer
+	# The spaceport had a typo. The description, I just wanted to append.
+	description `Sunracer is home of Megaparsec, Inc., a shipyard that specializes in designing fast, lightweight ships. It is a well-settled planet with a population of nearly half a billion, and a diverse economy that includes farming and fishing in addition to the shipyards.`
+	description `	Outside the cities, large regions of undeveloped land still remain. Hovercraft racing is a major local sport, and some massive and elaborate courses have been constructed in the wilderness. Elsewhere, massive tracts have been set aside as parks, and offer cheap permits to backcountry campers, climbers, and fisherman.`
+	spaceport `On Sunracer, the spaceport and shipyard are one and the same. As you walk among the landing pads and hangars, it is not immediately clear which ships are visiting starships undergoing minor repairs, and which are new ones under construction. A series of enormous cranes tower over one section of landing pads. From them hang hull fragments, engines, and even a few small ships, each being swung from one location within the shipyard to another. Meanwhile, forklifts and flatbed trucks are weaving between the buildings in every direction.`
+
+planet Chiron
+	description `Chiron is the only planet outside the Sol system that was colonized by humanity prior to the invention of the hyperdrive. It is now the second most populous planet in the Republic, with many sprawling cities and a burgeoning pollution problem.`
+	description `	Although Earth still has the most prestigious universities in the galaxy, Chiron has become the de-facto leader of the higher education industry, catering to those who value excellent teaching more highly than an illustrious name. As a result, off-world students form a noticeable fraction of the population.`
+
+planet Luna
+	description `In the early days of space travel, back when engines were still so inefficient that escaping from a planet's gravity was costly and difficult, an enormous shipyard was built on Luna where asteroids, harvested from the asteroid belt, were mined for raw materials for ships.`
+	description `	The facility is still in operation, although it is now overshadowed by the far more advanced shipbuilding centers like Geminus in the Castor system.`
+	shipyard haulers
+
+planet Hopper
+	description `Hopper is a temperate world of oceans, mountains, and plains, but with unfortunately high levels of sulfuric acid in its atmosphere. Metal and stone that are exposed to the atmosphere corrode quickly, requiring frequent maintenance. As a result, Hopper has only a few small settlements on it, and most of the industry is focused on underground mining. The oceans are populated only by a few indigenous life forms that have adapted to their high acidity; Earth fish could not be introduced successfully here.`
+
+planet Follower
+	description `Follower is on the edge of the "paradise planets" region of space; not really one of them yet, but aspiring to be. It is prosperous, but from manufacturing rather than law or finance or venture capitalism. A significant fraction of the local taxes collected here are being spent on terraforming, raising global temperatures and reducing seasonal fluctuations. The goods produced here always have a ready market to purchase them, so Follower's job economy is considered very stable.`
+	description `	As one of the few planets still actively engaged in terraforming, Follower has been the location of several experiments with new technology, trying to leapfrog the centuries-slow process that other worlds have gone through. Unfortunately most of these experiments have failed, sometimes spectacularly.`
+
+planet Mere
+	spaceport `The spaceport is on the largest island on the planet. The marketplace is a large, open plaza down by the docks, where the captains of whichever city-ships are moored here at the moment can sell their goods directly to customers. Behind the plaza are large warehouses. If a storm approaches, the goods can quickly be moved inside, while the ships launch out into the deep sea where they have a better chance of weathering the storm without being smashed against the rocks.`
+	spaceport `	The entire port is filled with the almost overpowering smell of fish. You have heard that this is the best place in the galaxy for good, cheap sushi, but the smell is doing nothing for your appetite.`
+
+planet Pugglequat
+	description `This planet has a handful of Pug cities on it, full of tall, graceful spires and arches. However, most of the land area is either left in its natural state, or in use for mining; it seems to abound in both oil reserves and metal ore.`
+	description `	The climate is somewhat cold by human standards, but still quite livable. You are not sure if that is because the Pug were just lucky enough to have a star system with two hospitable planets, or whether they have employed some sort of terraforming.`
+# Pugglequat didn't have a typo, it just seemed like this should have been two paragraphs.
+
+planet Haven
+	description `Haven was founded by highly successful "privateers" nearly two centuries ago. Since then, as rival bands of pirates have fought over it, it has changed hands fourteen times, but has never been successfully invaded by the Republic. Numerous small manufacturing shops sell outfits that cannot be bought legally, and there is even a small shipyard where customized ships are sold.`
+	description `	Much of the planet is desert, but with enough moisture to grow enough crops to feed the entire population. Strip mining has turned other parts of the planet into barren wastelands, and has polluted many of the rivers.`
+	
+
+
+# Now for catalysed fixes. Meaning things that require events to trigger.
+# Any events are grouped right with the catalyst mission with no space. Probably.
+
+mission "sxtDenebfix"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "FW Pug 5B: done"
+	on offer
+		event "sxtDenebfix"
+event "sxtDenebfix"
+	unvisit Deneb
+	system Deneb
+		habitable 5000
+		object
+			sprite star/a0
+			period 10
+		object Pugglemug
+			sprite planet/ocean2
+			distance 2710.94
+			period 798.464
+			offset 324.124
+			object
+				sprite planet/dust3
+				distance 159
+				period 16.3701
+		object Pugglequat
+			sprite planet/desert3
+			distance 7482.66
+			period 3661.5
+			offset 310.671
+			object
+				sprite planet/dust0sxt
+				distance 156
+				period 18.6328
+		object
+			sprite planet/ice1sxt
+			distance 9792.29
+			period 5481.52
+			offset 314.363
+		object
+			sprite planet/barycenter
+			distance 10275.3
+			period 5892.06
+			offset 240.212
+			object
+				sprite planet/dust7
+				distance 77.54
+				period 17.411
+			object
+				sprite planet/dust7sxt
+				distance 80.2
+				period 17.411
+				offset 180
+		object "Pug Wormhole"
+			sprite planet/wormhole
+			distance 11100.29
+			period 6788.2712
+mission "sxtDenebfix2"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "event: pug territory liberated"
+	on offer
+		event "sxtDenebfix2"
+event "sxtDenebfix2"
+	system Deneb
+		habitable 5000
+		object
+			sprite star/a0
+			period 10
+		object Pugglemug
+			sprite planet/ocean2
+			distance 2710.94
+			period 798.464
+			offset 324.124
+			object
+				sprite planet/dust3
+				distance 159
+				period 16.3701
+		object Pugglequat
+			sprite planet/desert3
+			distance 7482.66
+			period 3661.5
+			offset 310.671
+			object
+				sprite planet/dust0sxt
+				distance 156
+				period 18.6328
+		object
+			sprite planet/ice1sxt
+			distance 9792.29
+			period 5481.52
+			offset 314.363
+		object
+			sprite planet/barycenter
+			distance 10275.3
+			period 5892.06
+			offset 240.212
+			object
+				sprite planet/dust7
+				distance 77.54
+				period 17.411
+			object
+				sprite planet/dust7sxt
+				distance 80.2
+				period 17.411
+				offset 180
+	planet Pugglemug
+		description `This planet appears to be a capitol. Cities with impossibly high towers, connected by arches and bridges, are sprinkled across the landscape, and surrounding the cities are shorter, uglier buildings used as factories. However, the architecture and infrastructure are curiously suited to humans and not Pug.`
+		description `	A surprising amount of the land area is unsettled, its natural beauty untouched. Given what is now known about the Pug, this is not likely their true homeworld or a capital of any kind.`
+	planet Pugglequat
+		description `This planet has a handful of Pug cities on it, full of tall, graceful spires and arches, yet with distinctly human-friendly design and infrastructure. However, most of the land area is either left in its natural state, or in use for mining; it seems to abound in both oil reserves and metal ore.`
+		description `	The climate is somewhat cold by human standards, but still quite livable. You are not sure if that is because the Deneb system naturally had two habitable planets, or because the Pug employed some sort of terraforming.`
+mission "sxtdenebfix3a"
+	invisible
+	landing
+	to offer
+		has "event: pug territory liberated"
+		has "event: sxtFWecfix"
+	on offer
+		event "sxtdenebfix3a"
+event "sxtdenebfix3a"
+	system Deneb
+		fleet "Small Core Merchants" 800
+		fleet "Large Core Merchants" 1100
+		fleet "Small Northern Merchants" 1200
+		fleet "Large Northern Merchants" 3000
+		fleet "Small Southern Merchants" 900
+		fleet "Large Southern Merchants" 2600
+		fleet "Small Republic" 1000
+		fleet "Large Republic" 1100
+		fleet "Small Syndicate" 1200
+		fleet "Large Syndicate" 2000
+		fleet "Small Free Worlds" 1400
+		fleet "Large Free Worlds" 2800
+		fleet "Quarg" 55000
+		fleet "Navy Surveillance" 1200
+	system Orvala 
+		government "Free Worlds"
+	system Nocte
+		government "Republic"
+
+mission "sxtdstech"
+	invisible
+	landing
+	deadline 1
+	to offer
+		has "event: deep sky tech available"
+	on offer
+		event "sxtdstech"
+event "sxtdstech"
+	planet Ada
+		outfitter "Deep Sky Advanced"
+
+mission "sxtTarazedfix"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "event: Tarazed neutrality"
+	on offer
+		event "sxtTarazedfix"
+event "sxtTarazedfix"
+	system Umbral
+		government "Neutral"
+	system Sadr
+		government "Neutral"
+	system Lurata
+		government "Neutral"
+		
+mission "sxtFWecfix"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "event: fw expanded and cut"
+	on offer
+		event "sxtFWecfix"
+event "sxtFWecfix"
+	system Naper
+		government "Free Worlds"
+	system Tais
+		government "Free Worlds"
+	system Orvala
+		government "Free Worlds"
+	
+mission "sxtSmugglingfix1"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "Drug Running 1: done"
+	on offer
+		"smuggled" ++
+mission "sxtSmugglingfix2"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "Drug Running 2: done"
+	on offer
+		"smuggled" ++
+mission "sxtSmugglingfix3"
+	landing
+	invisible
+	deadline 1
+	to offer
+		has "Drug Running 3: done"
+	on offer
+		"smuggled" ++
+
+event "sxtgraffiasfix"
+	system Graffias
+		government Republic
+# I forget why I did this...? It's been a while so if this is a mistake then my bad.

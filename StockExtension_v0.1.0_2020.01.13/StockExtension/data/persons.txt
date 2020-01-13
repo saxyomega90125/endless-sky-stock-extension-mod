@@ -1,0 +1,25 @@
+person "R.N.S. Enterprise"
+	government "Republic"
+	personality
+		heroic disables
+	phrase
+		word
+			"Join the Navy! See space, the final frontier!"
+			"Join the Navy! Explore strange new worlds!"
+			"Join Starfl- er, the Navy!"
+	ship "Cruiser" "Cruiser"
+		"never disabled"
+		outfits
+			"Heavy Laser" 4
+			"Torpedo Launcher" 2
+			"Torpedo" 50
+			"Heavy Laser Turret" 3
+			"Heavy Anti-Missile Turret"
+			"Fusion Reactor"
+			"LP288a Battery Pack"
+			"D67-TM Shield Generator"
+			"Liquid Nitrogen Cooler"
+			"X4700 Ion Thruster"
+			"X4200 Ion Steering"
+			"Hyperdrive"
+			"Jump Drive"

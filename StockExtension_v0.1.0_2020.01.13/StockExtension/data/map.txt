@@ -1,0 +1,2975 @@
+# Systems are arranged in groups by their region (though in no particular order within that).
+# You can search for any given region to find the group (for example, search for 'dirt belt' and you'll go to that group.)
+
+planet Geminus
+	outfitter grenades
+	outfitter security
+	outfitter rifle
+
+planet Zug
+	outfitter Zug
+
+planet Rust
+	outfitter kraz
+
+planet Farpoint
+	outfitter alnitak
+	shipyard alnitak
+
+government "Unclaimed"
+	color .3 .3 .3
+
+system Danoa
+	fleet "Quarg" 50000
+	fleet "Small Northern Merchants" 15000
+	fleet "Small Northern Pirates" 5000
+	fleet "Large Northern Pirates" 16000
+	fleet "Large Republic" 30000
+		
+system Sumar
+	fleet "Quarg" 50000
+	fleet "Small Northern Pirates" 2000
+	fleet "Large Northern Pirates" 6000
+	fleet "Large Republic" 30000
+system Suhail
+	pos -760 -338
+
+# near earth
+
+system "Alpha Centauri"
+	pos -408 113
+
+system Sol
+	object
+		sprite star/g0
+		period 25.38
+	object
+		sprite planet/mercury
+		distance 289.647
+		period 60
+	object
+		sprite planet/venus
+		distance 533.534
+		period 150
+	object Earth
+		sprite planet/earth
+		distance 965.669
+		period 365.25
+		object Luna
+			sprite planet/luna
+			distance 201.24
+			period 27.3
+	object Mars
+		sprite planet/mars
+		distance 1471.43
+		period 687
+	object
+		sprite planet/jupiter
+		distance 3000
+		period 2000
+		object
+			sprite planet/io
+			distance 238.221
+			period 10.614
+		object
+			sprite planet/europa
+			distance 379.078
+			period 21.306
+		object
+			sprite planet/ganymede
+			distance 604.739
+			period 42.93
+		object Callisto
+			sprite planet/callisto
+			distance 811.717
+			period 66.76
+	object
+		sprite planet/saturnsxt
+		distance 6100
+		period 5800
+		object
+			sprite planet/tethys
+			distance 373
+			period 25.25
+		object
+			sprite planet/dust7
+			distance 500
+			period 40
+		object
+			sprite planet/rhea
+			distance 685
+			period 66
+		object
+			sprite planet/titan
+			distance 1000
+			period 125
+		object
+			sprite planet/iapetussxt
+			distance 1250
+			period 153
+	object
+		sprite planet/uranus
+		distance 11500
+		period 15000
+		object
+			sprite planet/miranda
+			distance 231
+			period 19
+		object
+			sprite planet/rock0
+			distance 331.9
+			period 27.835
+		object
+			sprite planet/dust3
+			distance 479
+			period 44.8
+		object
+			sprite planet/rock14
+			distance 714
+			period 81.51
+		object
+			sprite planet/oberonsxt
+			distance 829.664
+			period 102.1
+	object
+		sprite planet/neptune
+		distance 15501
+		period 23490.3
+		object
+			sprite planet/rock7sxt
+			distance 506
+			period -56.7
+
+planet Callisto
+	attributes "near earth" tourism moon
+	landscape land/jupitermoonsxt
+	description `Callisto Base was started in 2058 in preparation for exploration of the Jovian system. Originally nothing more than a fuel refinery with a few automated rockets, Callisto eventually became the central link between Earth and the outer solar system, refueling government and commercial vessels and hosting scientific research, technology prototyping, and construction of landers and other small vehicles.`
+	description `	As humanity developed better engines, Callisto Base became less critical and was eventually abandoned. It was restored into a museum in the early 2500s and for centuries has remained much as it was before even the first hyperdrive test. A small Navy base operational since the 2780s can also be found on the far side of the moon.`
+	spaceport `Rather than enclosed hangar bays, most ships put down on rocket landing pads and connect to a flexible transfer tube, and flat areas are cleared for larger ships with long hinged tubes running to them. This is how ships landed when the base was in use. When you exit the the tube, you step into a promenade with gift shops, restaurants, and a few hotels. The museum atrium also opens up to this promenade, though the entrance to Callisto Base proper is several rooms into the museum.`
+	spaceport `	Callisto always has tourists - many even on Earth can afford a trip - yet it is rarely crowded. Besides touring the museum, visitors can rent replica rovers to drive down cleared roads and look up at the same view that greeted intrepid human explorers nearly a millenium ago.`
+	bribe 0
+	security 0.2
+	tribute 600
+		threshold 4000
+		fleet "Small Republic" 26
+		
+		
+system Nocte
+	pos -437 170
+
+# end of earth end of near earth
+		
+# Like many stars in Endless Sky, Deneb is a real star. It's also about in the correct place, unlike most of them (hey, most of stars we've given actual names are VERY close).
+# Unfortunately, in the stock game it's a yellow dwarf, but it's actually a blue supergiant, and one of the brightest stars we've observed.
+# SXT exists to refine the game, and Deneb is rather important both in astronomy and in-game, so I decided to make the star bigger and the system sort-of-proportionally with it.
+# Bad side effect: the plot wants to override it, hence the bug fixes in the other file. Good side effect: the battle here gets a lot more spread out and more interesting.
+system Deneb
+	habitable 5000
+	object
+		sprite star/a0
+		period 10
+	object Pugglemug
+		sprite planet/ocean2
+		distance 2710.94
+		period 798.464
+		offset 324.124
+		object
+			sprite planet/dust3
+			distance 159
+			period 16.3701
+	object Pugglequat
+		sprite planet/desert3
+		distance 7482.66
+		period 3661.5
+		offset 310.671
+		object
+			sprite planet/dust0sxt
+			distance 156
+			period 18.6328
+	object
+		sprite planet/ice1sxt
+		distance 9792.29
+		period 5481.52
+		offset 314.363
+	object
+		sprite planet/barycenter
+		distance 10275.3
+		period 5892.06
+		offset 240.212
+		object
+			sprite planet/dust7
+			distance 77.54
+			period 17.411
+		object
+			sprite planet/dust7sxt
+			distance 80.2
+			period 17.411
+			offset 180
+
+
+# dirt belt
+
+system Sarin
+	pos -652 287
+
+system Hintar
+	pos -432 301
+
+system Rasalhague
+	pos -400 256
+
+system Orvala
+	pos -350 291
+	
+system Boral
+	pos -525 323
+
+system Coxa
+	pos -752.069 121.188
+	government Pirate
+	habitable 860
+	link "Gamma Volantis"
+	link Subra
+	asteroids "small rock" 3 2.4648
+	asteroids "large rock" 1 3.1824
+	asteroids "medium metal" 1 3.6192
+	asteroids "large metal" 1 4.212
+	trade Clothing 371
+	trade Electronics 719
+	trade Equipment 542
+	trade Food 434
+	trade "Heavy Metals" 1006
+	trade Industrial 703
+	trade "Luxury Goods" 1024
+	trade Medical 682
+	trade Metal 446
+	trade Plastic 421
+	fleet "Small Southern Merchants" 10000
+	fleet "Large Southern Merchants" 14000
+	fleet "Small Southern Pirates" 800
+	fleet "Large Southern Pirates" 2400
+	fleet "Small Republic" 45000
+	fleet "Large Republic" 70000
+	fleet "Large Deep" 90000
+	fleet "Small Deep" 50000
+	fleet "Republic Surveillance" 35000
+	object
+		sprite star/k5
+		distance 53.2092
+		period 14.7857
+		offset 180
+	object
+		sprite star/k0
+		distance 44.7908
+		period 14.7857
+	object Verge
+		sprite planet/ice2
+		distance 1390.65
+		period 524.077
+		object
+			sprite planet/tethys
+			distance 205.2
+			period 30.941
+			offset 10.739
+	object
+		sprite planet/gas4
+		distance 2438.35
+		period 1216.78
+	object
+		sprite planet/desert4
+		distance 2798.67
+		period 1496.23
+	object
+		sprite planet/gas3sxt
+		distance 6299.87
+		period 3854.41
+		object
+			sprite planet/moonlet2sxt
+			distance 227
+			period 15.7763
+		object Chasm
+			sprite planet/rock5sxt
+			distance 493.411
+			period 54.6067
+		object
+			sprite planet/rock0sxt
+			distance 595
+			period 115.67
+
+planet Verge
+	attributes pirate
+	landscape "land/mountain8"
+	description `Verge is a cold and unpleasant world that was settled before most of the Dirt Belt, by people looking to avoid large governments. Like many such worlds, most of its windtorn surface is uncharted, and various criminal factions operate in bases beyond the maps. Unlike most pirate worlds, however, there is one small friendly settlement.`
+	description `	Because of its isolation and its general lack of natural resources, it has evaded annexation by the Republic, which is why its residents live here.`
+	description `	The settlement is in a network of excavated caves branching from a cavern chamber that houses its few landing pads and a marketplace where people trade goods. It is actually a well-organized, mostly communal town with a population just over three thousand and its own goethermal generators.`
+
+planet Chasm
+	landscape "land/mountain2sxt"
+	attributes pirate moon
+	description `Chasm is an apt name for this moon: mountains and gorges cover the surface. The rock is rich in lead, meaning a ship in orbit can only effectively scan a very narrow angle. The surface is completely uncharted and poorly lit by the distant suns. These make it an ideal hiding place, and many small-time smugglers and Dirt Belt pirates with small ships who can't even afford to build a small base simply land in a recess. One large ship permanently landed on the surface operates as a hub.`
+	description `	Because of its isolation, the navy doesn't pay much attention to piracy coming from the Coxa system, much to the chagrin of nearby Dirt Belt worlds.`
+	spaceport `The spaceport is an old city ship, which has obviously been patched up more than a few times. It is moored on the surface, and smaller vessels dock to visit. It operates like a business conglomerate, with around 150 permanent residents to work and entrance tolls and 'taxes' to keep it funded.`
+	spaceport `	Near the docking ports, shops operate out of the old and dirty rooms, selling basic supplies. A few mechanics are fixing things, but the only well-maintained area is the bar operating in the old dining hall.`
+	spaceport `	People here live the pirate's life. Most of the visiting captains are far from wealthy, and the crewman are penniless. Occasionally, someone turns up dead in a corridor, and the body is simply thrown out an airlock.`
+	tribute 400
+		threshold 1600
+		fleet "Small Southern Pirates" 20
+	outfitter "Ammo South"
+	outfitter "Chasm"
+	bribe 0.00003
+
+system "Gamma Volantis"
+	pos -733.069 161.188
+	government Pirate
+	habitable 621.68
+	link Coxa
+	link Gacrux
+	asteroids "large metal" 1 4.77
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	fleet "Small Southern Merchants" 4000
+	fleet "Large Southern Merchants" 8000
+	fleet "Small Southern Pirates" 900
+	fleet "Large Southern Pirates" 2800
+	fleet "Small Republic" 32000
+	fleet "Large Republic" 50000
+	object
+		sprite star/k0
+		distance 17.3723
+		period 11.5792
+		offset 180
+	object
+		sprite star/l2sxt
+		distance 67.6277
+		period 11.5792
+	object
+		sprite planet/desert9
+		distance 423.038
+		period 139.587
+	object
+		sprite planet/gas15
+		distance 689.848
+		period 279.174
+	object
+		sprite planet/rock15
+		distance 1753.41
+		period 918.91
+	object
+		sprite planet/gas10
+		distance 2948.65
+		period 1539.99
+		object
+			sprite planet/rock3sxt
+			distance 206
+			period 16.1378
+
+system Subra
+	pos -769.574 76.8156
+	government Pirate
+	habitable 2201.68
+	link Coxa
+	link Mora
+	asteroids "small rock" 1 0.944
+	asteroids "medium rock" 10 2
+	asteroids "large rock" 8 1.616
+	asteroids "medium metal" 6 2.032
+	asteroids "large metal" 6 0.8
+	trade Clothing 317
+	trade Electronics 672
+	trade Equipment 468
+	trade Food 205
+	trade "Heavy Metals" 815
+	trade Industrial 644
+	trade "Luxury Goods" 997
+	trade Medical 717
+	trade Metal 547
+	trade Plastic 481
+	fleet "Small Southern Merchants" 4000
+	fleet "Large Southern Merchants" 8000
+	fleet "Small Southern Pirates" 900
+	fleet "Large Southern Pirates" 2800
+	fleet "Small Republic" 32000
+	fleet "Large Republic" 50000
+	fleet "Small Deep" 45000
+	fleet "Large Deep" 80000
+	object
+		sprite star/f5
+		distance 26.5259
+		period 11.2061
+		offset 180
+	object
+		sprite star/k0
+		distance 93.4741
+		period 11.2061
+	object
+		sprite planet/rock7
+		distance 624.217
+		period 132.949
+		offset 214.184
+	object
+		sprite planet/gas10
+		distance 2832.19
+		period 1284.89
+		offset 107.086
+		object
+			sprite planet/moonlet7sxt
+			distance 442.143
+			period 48.9375
+			offset 289.744
+		object
+			sprite planet/dust4
+			distance 531.712
+			period 68.278
+			offset 1.283
+	object
+		sprite planet/gas8sxt
+		distance 5163.21
+		period 3162.73
+		offset 49.6594
+		object
+			sprite planet/dust3
+			distance 355
+			period 34.2079
+			offset 356.931
+			
+system Gacrux
+	link "Cor Caroli"
+	link Muhlifain
+	link Turais
+	link "Gamma Volantis"
+	fleet "Small Southern Pirates" 5000
+	fleet "Large Southern Pirates" 10000
+	fleet "Small Republic" 17000
+	fleet "Large Republic" 40000
+	fleet "Small Southern Merchants" 2000
+	fleet "Large Southern Merchants" 5000
+	object
+		sprite star/k5
+		distance 32.6953
+		period 12.7313
+	object
+		sprite star/m0
+		distance 48.8047
+		period 12.7313
+		offset 180
+	object
+		sprite planet/lava5
+		distance 316.995
+		period 97.6596
+	object
+		sprite planet/ocean5
+		distance 698.285
+		period 319.29
+	object
+		sprite planet/mercury
+		distance 1053.44
+		period 591.636
+	object
+		sprite planet/gas4sxt
+		distance 1920.69
+		period 1456.55
+		object
+			sprite planet/rock7
+			distance 264
+			period 12.862
+		object
+			sprite planet/desert4
+			distance 396
+			period 23.629
+		object
+			sprite planet/moonlet10sxt
+			distance 499
+			period 33.4236
+	object
+		sprite planet/rock12sxt
+		distance 5293.27
+		period 6663.82
+		offset 358.179
+	
+system Mora
+	link "Delta Velorum"
+	link "Tania Australis"
+	link Subra
+	link Limen
+	fleet "Small Southern Pirates" 2000
+	fleet "Large Southern Pirates" 3000
+	fleet "Small Republic" 18000
+	fleet "Large Republic" 45000
+	fleet "Small Deep" 42000
+	fleet "Large Deep" 75000
+	fleet "Small Southern Merchants" 2000
+	fleet "Large Southern Merchants" 4000
+
+system Naper
+	pos -412 337
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/desert9
+		distance 156.44
+		period 18.8995
+	object
+		sprite planet/lava6
+		distance 386.44
+		period 73.3755
+		object
+			sprite planet/lava0sxt
+			distance 105
+			period 14.27
+	object
+		sprite planet/gas13
+		distance 967.73
+		period 290.776
+		object
+			sprite planet/rock2sxt
+			distance 301
+			period 14.0112
+	object
+		sprite planet/gas16
+		distance 2043.82
+		period 892.466
+		object
+			sprite planet/moonlet4sxt
+			distance 177
+			period 11.6071
+		object
+			sprite planet/dust5
+			distance 286
+			period 23.8403
+		object
+			sprite planet/moonlet16sxt
+			distance 405
+			period 42.9022
+	object
+		sprite planet/desert10sxt
+		distance 8454.98
+		period 7509.25
+		object
+			sprite planet/ice0
+			distance 244
+			period 28.9896
+			
+system Rutilicus
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/desert2sxt
+		distance 158.61
+		period 31.9607
+	object "New Boston"
+		sprite planet/ocean1sxt
+		distance 513.86
+		period 186.375
+	object
+		sprite planet/rock13
+		distance 864.75
+		period 406.87
+	object
+		sprite planet/gas14
+		distance 1503.91
+		period 933.153
+		object
+			sprite planet/ice7
+			distance 249
+			period 15.1366
+	object
+		sprite planet/gas16
+		distance 2597.32
+		period 2117.91
+		object
+			sprite planet/moonlet1sxt
+			distance 237
+			period 17.9839
+		object
+			sprite planet/rock0
+			distance 356
+			period 33.1083
+
+
+# end of dirt belt
+
+# the south
+
+system Albaldah
+	link Girtab
+	link Lurata
+	link Nunki
+	link Eltanin
+
+system Men
+	pos -870 366
+	
+system "Beta Lupi"
+	pos -840 417
+
+system "Yed Prior"
+	pos -805 380
+
+system Alniyat
+	link Pherkad
+	link Graffias
+	link Antares
+	link Syrma
+	link Han
+	link Aldhibain
+
+system Pherkad
+	pos -768 435
+	link "Beta Lupi"
+	link "Kappa Centauri"
+	link Alniyat
+	link "Yed Prior"
+	link Bunda
+	object
+		sprite star/m4
+		period 10
+	object Solace
+		sprite planet/forest5
+		distance 161.25
+		period 70.4925
+	object
+		sprite planet/dust8sxt
+		distance 379.25
+		period 254.262
+		offset 42.8561
+	object
+		sprite planet/desert5sxt
+		distance 1043.8
+		period 1160.96
+		offset 109.134
+	object
+		sprite planet/gas1
+		distance 2824.44
+		period 5167.62
+		offset 101.778
+		object
+			sprite planet/lava2
+			distance 274
+			period 15.9964
+		object
+			sprite planet/rock3sxt
+			distance 410
+			period 29.2801
+	
+system Bunda
+	pos -758.069 418.188
+	government Republic
+	habitable 664.2
+	link Pherkad
+	asteroids "medium rock" 2 3.304
+	asteroids "large rock" 1 3.36
+	asteroids "small metal" 10 2.8
+	asteroids "medium metal" 1 2.296
+	asteroids "large metal" 3 2.94
+	trade Clothing 253
+	trade Electronics 691
+	trade Equipment 522
+	trade Food 167
+	trade "Heavy Metals" 885
+	trade Industrial 799
+	trade "Luxury Goods" 1046
+	trade Medical 525
+	trade Metal 367
+	trade Plastic 485
+	fleet "Small Southern Pirates" 2800
+	fleet "Large Southern Pirates" 4000
+	fleet "Small Southern Merchants" 1900
+	fleet "Large Southern Merchants" 4000
+	fleet "Small Militia" 2300
+	fleet "Large Militia" 4500
+	object
+		sprite star/f5
+		distance 19.7262
+		period 11.9942
+		offset 180
+	object
+		sprite star/l2sxt
+		distance 77.2738
+		period 11.9942
+	object
+		sprite planet/rock4
+		distance 658.474
+		period 232.941
+	object
+		sprite planet/uranus
+		distance 1183.83
+		period 634.582
+		object
+			sprite planet/rock1sxt
+			distance 342.82
+			period 26.4945
+			offset 16.275
+	object
+		sprite planet/barycenter
+		distance 2702.79
+		period 1515.26
+		object
+			sprite planet/desert7
+			distance 89.35
+			period 20.47
+		object
+			sprite planet/rock11
+			distance 96.192
+			period 20.47
+			offset 180
+	object
+		sprite planet/gas8
+		distance 4933.92
+		period 5399.33
+		offset 43.9869
+		object
+			sprite planet/miranda
+			distance 247.062
+			period 20.6722
+			offset 318.722
+		object
+			sprite planet/dust0
+			distance 352.062
+			period 35.1647
+			offset 310.137
+			
+system "Kappa Centauri"
+	pos -796 448
+	object
+		sprite star/g0
+		distance 10.2222
+		period 10.1264
+	object
+		sprite star/m4
+		distance 81.7778
+		period 10.1264
+		offset 180
+	object
+		sprite planet/mercury
+		distance 311.068
+		period 62.9585
+	object
+		sprite planet/lava1sxt
+		distance 652.678
+		period 191.346
+	object Cornucopia
+		sprite planet/forest3
+		distance 1198.68
+		period 476.24
+	object
+		sprite planet/rock13sxt
+		distance 1542.24
+		period 695.022
+	object
+		sprite planet/gas3sxt
+		distance 2905.68
+		period 1797.39
+		object
+			sprite planet/dust9sxt
+			distance 226
+			period 13.7068
+		object
+			sprite planet/rock17
+			distance 365
+			period 28.1328
+			
+system Han
+	pos -619 520
+	object
+		sprite star/g5
+		distance 47.4335
+		period 14.5195
+		offset 180
+	object
+		sprite star/k0
+		distance 65.0665
+		period 14.5195
+	object
+		sprite planet/rock14sxt
+		distance 370.007
+		period 86.6037
+	object
+		sprite planet/ocean6
+		distance 677.097
+		period 214.387
+	object Darkstone
+		sprite planet/forest0sxt
+		distance 1116.66
+		period 454.048
+		object
+			sprite planet/ice7
+			distance 161
+			period 19.0139
+	object
+		sprite planet/ice5sxt
+		distance 1526.15
+		period 725.466
+	object
+		sprite planet/dust1
+		distance 3667.91
+		period 2703.02
+		
+system Aldhibain
+	link Kornephoros
+	link Sabik
+	link Alniyat
+	link Dschubba
+	link Syrma
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/dust5sxt
+		distance 162.5
+		period 38.8183
+	object Glaze
+		sprite planet/ocean2
+		distance 449.59
+		period 178.641
+	object
+		sprite planet/barycenter
+		distance 1154.99
+		period 735.569
+		offset 60.2478
+		object
+			sprite planet/rock7sxt
+			distance 116
+			period 27
+		object
+			sprite planet/ice4sxt
+			distance 80
+			period 27
+			offset 180
+		object
+			sprite planet/moonlet9sxt
+			distance 371.202
+			period 114.051
+			offset 195.542
+	object
+		sprite planet/gas8sxt
+		distance 3050.99
+		period 3158.03
+		offset 77.2949
+		object "Charon Station"
+			sprite planet/station2
+			distance 211
+			period 13.622
+		object
+			sprite planet/ice0
+			distance 316
+			period 27.9874
+		object
+			sprite planet/moonlet14sxt
+			distance 456
+			period -48.5154
+	object
+		sprite planet/gas8
+		distance 6256.25
+		period 9273.16
+		offset 52.893
+		object
+			sprite planet/moonlet3sxt
+			distance 329.642
+			period 31.8597
+		object
+			sprite planet/rock5sxt
+			distance 497.041
+			period 58.9882
+		object
+			sprite planet/ice2
+			distance 785.808
+			period 117.26
+			offset 1
+		object
+			sprite planet/moonlet15sxt
+			distance 1346.69
+			period 263.073
+	object
+		sprite planet/gas3sxt
+		distance 12427.7
+		period 25962.2
+		object
+			sprite planet/rock3
+			distance 351.535
+			period 28.1596
+		object
+			sprite planet/moonlet6sxt
+			distance 641.416
+			period -69.4037
+		object
+			sprite planet/dust4
+			distance 1349.53
+			period 211.811
+			offset 28.6383
+			
+system Graffias
+	pos -723 484
+	object
+		sprite star/k0
+		distance 59.5
+		period 17.2013
+		offset 180
+	object
+		sprite star/k0
+		distance 59.5
+		period 17.2013
+	object
+		sprite planet/desert3
+		distance 308
+		period 71.6254
+	object Poisonwood
+		sprite planet/cloud8
+		distance 609.25
+		period 199.267
+	object
+		sprite planet/dust3sxt
+		distance 1489.5
+		period 761.732
+		object
+			sprite planet/rock3
+			distance 192
+			period 13.1134
+		object
+			sprite planet/moonlet7sxt
+			distance 345
+			period 31.5857
+		object
+			sprite planet/ice0
+			distance 516
+			period 57.7746
+	object
+		sprite planet/ice0sxt
+		distance 2716.7
+		period 1876.3
+		offset 350.328
+	object
+		sprite planet/gas4sxt
+		distance 6373.1
+		period 6741.67
+		offset 36.9531
+		object
+			sprite planet/rock0
+			distance 336.599
+			period 30.7681
+			offset 342.831
+		object
+			sprite planet/ice8
+			distance 546.867
+			period 63.717
+			offset 241.496
+		object
+			sprite planet/moonlet5sxt
+			distance 748.007
+			period 103.042
+		object
+			sprite planet/dust4sxt
+			distance 867.007
+			period 127.194
+			offset 37.5578
+		object
+			sprite planet/moonlet12sxt
+			distance 976.007
+			period 151.919
+			offset 97.1665
+	
+system Atria
+	pos -572 510
+	object
+		sprite star/m0
+		period 10
+	object Lichen
+		sprite planet/cloud1
+		distance 176.11
+		period 63.8482
+	object
+		sprite planet/gas16
+		distance 774.32
+		period 588.645
+		object
+			sprite planet/dust2sxt
+			distance 203
+			period 14.2563
+		object
+			sprite planet/desert4
+			distance 304
+			period 26.126
+	object
+		sprite planet/ice6
+		distance 1516.96
+		period 1614.11
+		object
+			sprite planet/rock7
+			distance 140
+			period 18.9022
+	object
+		sprite planet/rock13sxt
+		distance 2505.05
+		period 3425.29
+	
+system Nunki
+	pos -385 515
+	object
+		sprite star/m0
+		period 10
+	object Albatross
+		sprite planet/cloud8
+		distance 272.14
+		period 122.648
+		object
+			sprite planet/moonlet4sxt
+			distance 136
+			period 18.0979
+	object
+		sprite planet/ice1sxt
+		distance 639.14
+		period 441.435
+	object
+		sprite planet/rock2
+		distance 1205.14
+		period 1142.96
+		object
+			sprite planet/miranda
+			distance 153
+			period 20.435
+	object
+		sprite planet/gas6sxt
+		distance 3795.53
+		period 6388.24
+		offset 60
+		object
+			sprite planet/dust0
+			distance 277.917
+			period 11.8342
+		object
+			sprite planet/rock7
+			distance 477.441
+			period 26.6467
+		object
+			sprite planet/desert4
+			distance 717.06
+			period 49.0453
+		object
+			sprite planet/water0
+			distance 939.707
+			period 73.579
+		object
+			sprite planet/ice1sxt
+			distance 1282.18
+			period 117.27
+
+system Shaula
+	pos -472 508
+	object
+		sprite star/g5
+		period 10
+	object
+		sprite planet/desert3
+		distance 230.61
+		period 56.0321
+	object Greenrock
+		sprite planet/ocean2
+		distance 502.57
+		period 180.266
+	object
+		sprite planet/ocean8
+		distance 861.82
+		period 404.804
+	object
+		sprite planet/rock1
+		distance 1374.03
+		period 814.919
+		object
+			sprite planet/dust0
+			distance 135
+			period 16.3428
+	object
+		sprite planet/gas7
+		distance 2840.12
+		period 2421.73
+		object
+			sprite planet/dust9sxt
+			distance 257
+			period 13.3689
+		object
+			sprite planet/eqr3sxt
+			distance 359
+			period 22.0718
+	object
+		sprite planet/gas5sxt
+		distance 7958.94
+		period 11360.6
+		offset 1.64586
+		object
+			sprite planet/moonlet16sxt
+			distance 425.133
+			period 29.1273
+		object
+			sprite planet/dust2sxt
+			distance 833.887
+			period 80.077
+			offset 270.362
+		object
+			sprite planet/dust5
+			distance 1124.67
+			period 125.426
+			offset 247.107
+	object
+		sprite planet/rock8sxt
+		distance 18995.6
+		period 41889
+
+system Minkar
+	habitable 650
+	object
+		sprite star/k0
+		distance 33.5961
+		period 16.6267
+	object
+		sprite star/l2sxt
+		distance 78.4039
+		period 16.6267
+		offset 180
+	object
+		sprite planet/rock16
+		distance 409.064
+		period 127.853
+		object
+			sprite planet/rock0sxt
+			distance 154
+			period 24.0239
+	object
+		sprite planet/cloud0sxt
+		distance 901.504
+		period 418.287
+		object
+			sprite planet/rock7
+			distance 182
+			period 18.6328
+	object
+		sprite planet/rock13sxt
+		distance 1662.54
+		period 1047.57
+	object
+		sprite planet/desert4
+		distance 2872.75
+		period 2379.42
+	object
+		sprite planet/gas1
+		distance 5354.75
+		period 6055.24
+		object
+			sprite planet/desert9sxt
+			distance 360.748
+			period 27.3855
+			offset 261.294
+		object
+			sprite planet/moonlet8sxt
+			distance 443.748
+			period 37.3611
+			offset 159.595
+		object
+			sprite planet/rock2sxt
+			distance 665.317
+			period 68.5897
+			offset 247.956
+			
+system Ildaria
+	object
+		sprite star/wr
+		period 10
+	object
+		sprite planet/dust3sxt
+		distance 1127.55
+		period 605.795
+		offset 319.378
+		object
+			sprite planet/desert4
+			distance 150
+			period 19.612
+	object
+		sprite planet/rock6
+		distance 1886.53
+		period 1311.03
+		offset 147.701
+	object
+		sprite planet/rock10sxt
+		distance 2644.14
+		period 2175.43
+		offset 175.449
+
+system Zubeneschamali
+	object
+		sprite star/g5
+		distance 62
+		period 15.622
+		offset 180
+	object
+		sprite star/g5
+		distance 62
+		period 15.622
+	object
+		sprite planet/cloud8
+		distance 420.44
+		period 97.5351
+		object
+			sprite planet/desert4
+			distance 160
+			period 23.094
+	object
+		sprite planet/rock1sxt
+		distance 880
+		period 295.345
+	object Zug
+		sprite planet/forest2
+		distance 1146.84
+		period 439.399
+	object
+		sprite planet/rock6
+		distance 1525.84
+		period 674.324
+	object
+		sprite planet/dust3
+		distance 2218.25
+		period 1182.01
+	object
+		sprite planet/gas4
+		distance 9185.35
+		period 9959.75
+		offset 329.649
+		object
+			sprite planet/moonlet14sxt
+			distance 429.196
+			period 31.3604
+			offset 343.761
+		object
+			sprite planet/moonlet1sxt
+			distance 684.002
+			period 63.0933
+			offset 317.194
+		object
+			sprite planet/dust8sxt
+			distance 1078.12
+			period 124.853
+			offset 292.262
+		object
+			sprite planet/moonlet2sxt
+			distance 1502.68
+			period 205.446
+			offset 274.132
+		object
+			sprite planet/eqr2sxt
+			distance 1815.7
+			period 272.874
+			offset 182.352
+		object
+			sprite planet/ice1sxt
+			distance 2150
+			period 321.115
+			
+system Kornephoros
+	object
+		sprite star/k0
+		distance 57.5
+		period 16.3414
+		offset 180
+	object
+		sprite star/k0
+		distance 57.5
+		period 16.3414
+	object
+		sprite planet/dust1
+		distance 327.16
+		period 78.4118
+	object Deep
+		sprite planet/ocean9
+		distance 1083.44
+		period 472.553
+		offset 203.505
+		object Clink
+			sprite planet/rock5sxt
+			distance 168
+			period 20.8235
+		object
+			sprite planet/moonlet15sxt
+			distance 270.927
+			period 45.6547
+			offset 23.7809
+	object
+		sprite planet/moonlet0sxt
+		distance 2131.07
+		period 1303.58
+		offset 53.194
+	object
+		sprite planet/gas15
+		distance 4153.16
+		period 3546.58
+		offset 144.074
+		object
+			sprite planet/moonlet6sxt
+			distance 198
+			period 13.7328
+		object
+			sprite planet/rock3
+			distance 335
+			period 30.2224
+		object
+			sprite planet/moonlet1sxt
+			distance 465
+			period 49.4244
+		object
+			sprite planet/dust1
+			distance 602
+			period 72.8043
+		object
+			sprite planet/moonlet7sxt
+			distance 822
+			period 124.052
+		object
+			sprite planet/moonlet11sxt
+			distance 1041
+			period 176.796
+		object
+			sprite planet/moonlet13sxt
+			distance 1160
+			period -207.962
+		object
+			sprite planet/miranda
+			distance 1455.87
+			period 292.402
+	object
+		sprite planet/barycenter
+		distance 8599.64
+		period 10567.2
+		object
+			sprite planet/rock13sxt
+			distance 96
+			period 30.23
+		object
+			sprite planet/rock17
+			distance 107
+			period 30.23
+			offset 180
+		object
+			sprite planet/moonlet3sxt
+			distance 421.712
+			period 314.178
+			offset 289.899
+
+system "Zeta Centauri"
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/cloud4
+		distance 212.39
+		period 58.0039
+	object Dune
+		sprite planet/cloud8
+		distance 474.64
+		period 193.777
+	object
+		sprite planet/lava3
+		distance 750.33
+		period 385.154
+	object
+		sprite planet/gas10
+		distance 1810.18
+		period 1443.24
+		object
+			sprite planet/dust10sxt
+			distance 250.057
+			period 20.814
+	object
+		sprite planet/rock4sxt
+		distance 3771.79
+		period 4340.88
+	object
+		sprite planet/gas4
+		distance 9434.23
+		period 17171.8
+
+system Dschubba
+	pos -582 473
+	link Atria
+	link Lesath
+	link Aldhibain
+	link Syrma
+
+system Syrma
+	pos -620 487
+	government Republic
+	habitable 2035
+	link Aldhibain
+	link Dschubba
+	link Alniyat
+	asteroids "large metal" 1 6.1152
+	trade Clothing 344
+	trade Electronics 764
+	trade Equipment 640
+	trade Food 221
+	trade "Heavy Metals" 730
+	trade Industrial 838
+	trade "Luxury Goods" 1088
+	trade Medical 581
+	trade Metal 353
+	trade Plastic 393
+	fleet "Small Southern Merchants" 1300
+	fleet "Large Southern Merchants" 3000
+	fleet "Small Southern Pirates" 1700
+	fleet "Large Southern Pirates" 4000
+	fleet "Small Militia" 3200
+	fleet "Large Militia" 5500
+	object
+		sprite star/f5
+		distance 18.398
+		period 11.2216
+	object
+		sprite star/m0
+		distance 98.602
+		period 11.2216
+		offset 180
+	object
+		sprite planet/rock6sxt
+		distance 670.869
+		period 154.076
+		offset 290.258
+	object
+		sprite planet/gas0
+		distance 2138.46
+		period 876.857
+		offset 72.7222
+		object
+			sprite planet/moonlet5sxt
+			distance 272
+			period 13.1465
+		object
+			sprite planet/moonlet9sxt
+			distance 369
+			period 20.7729
+		object
+			sprite planet/rock17
+			distance 487
+			period 31.4956
+	object
+		sprite planet/gas8
+		distance 4950.45
+		period 3088.48
+		offset 11.0589
+		object
+			sprite planet/moonlet14sxt
+			distance 210
+			period 16.1997
+		object
+			sprite planet/ice8
+			distance 356
+			period 35.7562
+	object
+		sprite planet/gas1sxt
+		distance 7342.44
+		period 5578.77
+		offset 42.1296
+		object
+			sprite planet/rock9sxt
+			distance 482.54
+			period 42.3658
+			offset 41.8318
+
+# end of the south
+
+# tarazed
+
+system Sadr
+	pos -270 503
+	link Albireo
+
+system Lurata
+	pos -279 463
+	link Dabih
+	link Albireo
+	link Albaldah
+
+system Albireo
+	pos -250 480
+	link Tarazed
+	link Sadr
+	link Lurata
+
+system Dabih
+	link Tarazed
+	link Lurata
+	link "Kaus Australis"
+	link Eltanin
+
+system Umbral
+	pos -200 412
+
+# end of tarazed
+
+# syndicate core
+			
+system Algenib
+	pos -142 345
+	
+system "Gamma Cassiopeiae"
+	pos -132 274
+	
+system "Alpha Hydri"
+	pos -80 87
+	link Mesarthim
+	link Sheratan
+	link Thabit
+	
+system "Psi Persei"
+	pos -155.458 -4.1641
+	government Syndicate
+	habitable 8640
+	link Hamal
+	asteroids "small rock" 45 3.6975
+	asteroids "medium rock" 104 3.366
+	asteroids "large rock" 3 3.5955
+	asteroids "small metal" 1 3.366
+	asteroids "medium metal" 14 2.295
+	asteroids "large metal" 10 2.4735
+	trade Clothing 359
+	trade Electronics 690
+	trade Equipment 533
+	trade Food 199
+	trade "Heavy Metals" 640
+	trade Industrial 821
+	trade "Luxury Goods" 1162
+	trade Medical 633
+	trade Metal 332
+	trade Plastic 404
+	fleet "Small Core Merchants" 1600
+	fleet "Large Core Merchants" 1800
+	fleet "Small Syndicate" 6000
+	fleet "Small Core Pirates" 4200
+	fleet "Large Core Pirates" 11000
+	object
+		sprite star/b5
+		period 10
+	object
+		sprite planet/desert1sxt
+		distance 1955.25
+		period 894.318
+		offset 225.49
+		object
+			sprite planet/tethys
+			distance 147.114
+			period 23.6355
+			offset 271.185
+	object
+		sprite planet/gas5
+		distance 4935.18
+		period 1491.96
+		offset 213.611
+		object
+			sprite planet/moonlet5sxt
+			distance 490.474
+			period 27.7453
+			offset 142.625
+		object
+			sprite planet/dust0
+			distance 621.474
+			period 39.5731
+	object
+		sprite planet/desert4
+		distance 8733.38
+		period 3512.18
+		offset 212.209
+	object
+		sprite planet/barycenter
+		distance 14693.8
+		period 7664.89
+		offset 157.673
+		object
+			sprite planet/rock11
+			distance 104.56
+			period 44.691
+			offset 180
+		object
+			sprite planet/ice3sxt
+			distance 136.47
+			period 44.691
+		object
+			sprite planet/moonlet2sxt
+			distance 543.218
+			period 86.672
+			offset 14.58
+		object
+			sprite planet/moonlet12sxt
+			distance 751.472
+			period -126.28
+			offset 312.687
+	object
+		sprite planet/gas6
+		distance 18342.5
+		period 10690.4
+		offset 288.613
+		object
+			sprite planet/dust3
+			distance 397.349
+			period 20.2313
+			offset 281.188
+		object
+			sprite planet/moonlet12sxt
+			distance 513.349
+			period 29.7088
+			offset 254.477
+		object
+			sprite planet/ice4
+			distance 835.969
+			period 61.7376
+			offset 264.576
+
+system Hamal
+	link "Psi Persei"
+	link Ruchbah
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/dust2sxt
+		distance 160.25
+		period 24.6914
+	object
+		sprite planet/lava2
+		distance 423.06
+		period 105.913
+	object
+		sprite planet/dust4sxt
+		distance 879.15
+		period 317.28
+	object
+		sprite planet/gas6
+		distance 2570.04
+		period 1585.83
+		object
+			sprite planet/dust0
+			distance 476.54
+			period 27.1837
+		object Trove
+			sprite planet/rock17
+			distance 569.04
+			period 34.251
+	
+system Mabsuthat
+	pos -82.2 215
+	government Pirate
+	habitable 425.92
+	link Almach
+	link Schedar
+	asteroids "small rock" 2 1.47
+	asteroids "large rock" 11 1.365
+	asteroids "small metal" 5 3.024
+	asteroids "medium metal" 49 2.121
+	asteroids "large metal" 4 2.415
+	trade Clothing 344
+	trade Electronics 694
+	trade Equipment 616
+	trade Food 324
+	trade "Heavy Metals" 816
+	trade Industrial 743
+	trade "Luxury Goods" 965
+	trade Medical 743
+	trade Metal 325
+	trade Plastic 279
+	fleet "Small Core Merchants" 1300
+	fleet "Large Core Merchants" 1900
+	fleet "Small Syndicate" 3600
+	fleet "Large Syndicate" 5100
+	fleet "Small Core Pirates" 1400
+	fleet "Large Core Pirates" 2200
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/rock16
+		distance 362.386
+		period 133.707
+		offset 333.462
+		object
+			sprite planet/rock0sxt
+			distance 150
+			period 24.5523
+	object
+		sprite planet/oberonsxt
+		distance 743.929
+		period 393.272
+		offset 20.8587
+	object
+		sprite planet/gas3sxt
+		distance 1373.62
+		period 986.724
+		offset 21.6401
+		object
+			sprite planet/ice0
+			distance 361.582
+			period 29.265
+		object
+			sprite planet/moonlet1sxt
+			distance 361.582
+			period 29.265
+			offset 180
+	object
+		sprite planet/rock0
+		distance 2242.48
+		period 2058.2
+		offset 76.728
+		
+system Almach
+	pos -110 245
+	link Mabsuthat
+
+system Schedar
+	pos -108 204
+	link Achernar
+	link Mabsuthat
+	link Mirach
+	link Alkes
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/lava10sxt
+		distance 146
+		period 21.4722
+	object
+		sprite planet/dust0
+		distance 317.96
+		period 69.0092
+	object
+		sprite planet/forest0
+		distance 572.21
+		period 166.602
+	object Amazon
+		sprite planet/forest2sxt
+		distance 951.97
+		period 357.506
+	object
+		sprite planet/rock3
+		distance 1589.22
+		period 771.124
+	object
+		sprite planet/gas10
+		distance 6882.98
+		period 6950.45
+		object
+			sprite planet/dust5
+			distance 210
+			period 15
+		object
+			sprite planet/rock7
+			distance 298
+			period 25.3563
+		object
+			sprite planet/moonlet4sxt
+			distance 340.37
+			period 34.287
+	
+system Alkes
+	pos -126.823 179.019
+	government Syndicate
+	habitable 486.68
+	link Achernar
+	link Schedar
+	asteroids "small rock" 3 4.1184
+	asteroids "medium rock" 5 3.9936
+	asteroids "large rock" 1 3.5568
+	asteroids "small metal" 29 1.8096
+	asteroids "medium metal" 48 1.9344
+	asteroids "large metal" 5 4.3056
+	trade Clothing 232
+	trade Electronics 809
+	trade Equipment 573
+	trade Food 318
+	trade "Heavy Metals" 674
+	trade Industrial 655
+	trade "Luxury Goods" 1009
+	trade Medical 718
+	trade Metal 262
+	trade Plastic 317
+	fleet "Small Core Merchants" 1000
+	fleet "Large Core Merchants" 1200
+	fleet "Small Syndicate" 3400
+	fleet "Large Syndicate" 5000
+	fleet "Small Core Pirates" 2200
+	fleet "Large Core Pirates" 3300
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/desert4
+		distance 440
+		period 147.6301
+		offset 106.694
+	object
+		sprite planet/gas8
+		distance 1286.633
+		period 699.912
+		offset 246.815
+		object
+			sprite planet/moonlet5sxt
+			distance 209
+			period 16.0841
+			offset 3.291
+		object
+			sprite planet/ice0sxt
+			distance 300
+			period 27.6604
+	object
+		sprite planet/gas4sxt
+		distance 2044.9
+		period 1676.66
+		offset 305.164
+		object
+			sprite planet/dust1
+			distance 387.985
+			period 32.91
+			offset 199.384
+	object
+		sprite planet/barycenter
+		distance 3947.73
+		period 4497.37
+		offset 28.7765
+		object
+			sprite planet/oberon
+			distance 84.281
+			period 18.43
+			offset 180
+		object
+			sprite planet/ice8
+			distance 80.26
+			period 18.43
+		object
+			sprite planet/moonlet11sxt
+			distance 363
+			period 42.3542
+			offset 98.37
+			
+system Oyr
+	pos -53.7559 143.468
+	government Syndicate
+	habitable 320
+	link Achernar
+	link Polaris
+	asteroids "small rock" 9 2.2192
+	asteroids "large rock" 4 3.5568
+	asteroids "medium metal" 4 2.9488
+	asteroids "large metal" 4 2.4928
+	trade Clothing 263
+	trade Electronics 742
+	trade Equipment 618
+	trade Food 264
+	trade "Heavy Metals" 749
+	trade Industrial 711
+	trade "Luxury Goods" 964
+	trade Medical 775
+	trade Metal 289
+	trade Plastic 337
+	fleet "Small Core Merchants" 800
+	fleet "Large Core Merchants" 900
+	fleet "Small Syndicate" 1100
+	fleet "Large Syndicate" 2200
+	fleet "Small Core Pirates" 1600
+	fleet "Korath Raid" 70000
+	object
+		sprite star/m0
+		period 10
+	object
+		sprite planet/ice5sxt
+		distance 528.21
+		period 271.453
+	object
+		sprite planet/gas16
+		distance 1804.87
+		period 1714.56
+		object
+			sprite planet/rock3sxt
+			distance 214
+			period 13.375
+			
+system Cajam
+	pos -71.8458 125.365
+	government Syndicate
+	habitable 2035
+	link Achernar
+	link Polaris
+	asteroids "small rock" 2 2.812
+	asteroids "medium rock" 5 1.33
+	asteroids "large rock" 17 2.546
+	asteroids "medium metal" 6 2.546
+	asteroids "large metal" 3 2.451
+	trade Clothing 263
+	trade Electronics 742
+	trade Equipment 618
+	trade Food 264
+	trade "Heavy Metals" 749
+	trade Industrial 711
+	trade "Luxury Goods" 964
+	trade Medical 775
+	trade Metal 289
+	trade Plastic 337
+	fleet "Small Core Merchants" 800
+	fleet "Large Core Merchants" 1000
+	fleet "Small Syndicate" 1100
+	fleet "Large Syndicate" 2300
+	fleet "Small Core Pirates" 1700
+	fleet "Korath Raid" 70000
+	object
+		sprite star/f5
+		distance 18.398
+		period 11.2216
+	object
+		sprite star/m0
+		distance 98.602
+		period 11.2216
+		offset 180
+	object
+		sprite planet/desert6sxt
+		distance 925.979
+		period 249.85
+	object
+		sprite planet/rock2
+		distance 1506.39
+		period 518.421
+		object
+			sprite planet/dust9sxt
+			distance 121
+			period 14.3719
+	object
+		sprite planet/gas1
+		distance 2356.72
+		period 1014.47
+		object
+			sprite planet/ice0
+			distance 274.28
+			period 18.1555
+		object
+			sprite planet/dust3
+			distance 427.462
+			period 35.3234
+	object
+		sprite planet/desert7sxt
+		distance 4547.4
+		period 2719.08
+	object
+		sprite planet/uranus
+		distance 6356.69
+		period 4493.91
+		object
+			sprite planet/rock0
+			distance 238
+			period 15.687
+		object
+			sprite planet/ice5sxt
+			distance 376
+			period 31.1498
+		object
+			sprite planet/moonlet8sxt
+			distance 506
+			period 48.6294
+		object
+			sprite planet/rock3sxt
+			distance 618
+			period 65.6381
+	object
+		sprite planet/gas0sxt
+		distance 9819.14
+		period 8627.55
+		object
+			sprite planet/lava0sxt
+			distance 575.642
+			period 36.2755
+		object
+			sprite planet/rock7sxt
+			distance 726.058
+			period 51.3857
+
+system Achernar
+	link Alpheratz
+	link Schedar
+	link Alkes
+	link Cajam
+	link Oyr
+
+system "Al Dhanab"
+	pos -180 193
+	link Alkes
+	link Alpheratz
+	link Scheat
+	link Mirach
+
+system Polaris
+	pos -35 126
+	link Oyr
+	link Cajam
+
+system Algol
+	pos -182 39
+	link Nekkar
+	link Ruchbah
+
+system Ruchbah
+	link Ankaa
+	link Alpheratz
+	link Hamal
+	link Algol
+	link Mesarthim
+
+system Kugel
+	link Acamar
+	link Nekkar
+
+system Diphda
+	link Acamar
+	link Caph
+	link Ankaa
+	link Nekkar
+	trade Equipment 488
+
+system Acamar
+	government Republic
+
+system Mesarthim
+	pos -107.807 65.0862
+	government Syndicate
+	habitable 11500
+	link Ruchbah
+	link Sheratan
+	link Nembus
+	link "Alpha Hydri"
+	trade Clothing 293
+	trade Electronics 706
+	trade Equipment 576
+	trade Food 232
+	trade "Heavy Metals" 675
+	trade Industrial 848
+	trade "Luxury Goods" 1155
+	trade Medical 597
+	trade Metal 334
+	trade Plastic 353
+	object
+		sprite star/a0
+		distance 400
+		period 521
+	object
+		sprite star/a0
+		distance 440
+		period 521
+		offset 180
+	object
+		sprite planet/lava1sxt
+		distance 3200
+		period 1300
+		offset 111
+	object
+		sprite planet/gas4
+		distance 9945.96
+		period 14516.182
+		offset 187.982
+		object
+			sprite planet/moonlet5sxt
+			distance 546
+			period 38.7
+			offset 341
+			
+system Thabit
+	pos -100 102
+	government Syndicate
+	habitable 5000
+	link "Alpha Hydri"
+	asteroids "small rock" 4 6.3784
+	asteroids "medium rock" 30 2.9512
+	asteroids "large rock" 1 2.5704
+	asteroids "medium metal" 7 4.6648
+	asteroids "large metal" 1 6.902
+	trade Clothing 352
+	trade Electronics 721
+	trade Equipment 555
+	trade Food 236
+	trade "Heavy Metals" 714
+	trade Industrial 859
+	trade "Luxury Goods" 1132
+	trade Medical 531
+	trade Metal 324
+	trade Plastic 390
+	fleet "Small Core Merchants" 1200
+	fleet "Large Core Merchants" 5000
+	fleet "Small Core Pirates" 4000
+	fleet "Large Core Pirates" 12000
+	fleet "Small Syndicate" 4700
+	fleet "Large Syndicate" 19000
+	fleet "Korath Raid" 85000
+	object
+		sprite star/a0
+		period 10
+	object
+		sprite planet/rock19
+		distance 1911.55
+		period 359.651
+	object
+		sprite planet/dust5
+		distance 5165.63
+		period 1597.67
+	object
+		sprite planet/rock12sxt
+		distance 6809.96
+		period 2418.35
+	object
+		sprite planet/gas3sxt
+		distance 8483.32
+		period 3362.42
+		object
+			sprite planet/tethys
+			distance 221
+			period 14.6874
+		object
+			sprite planet/dust7
+			distance 319
+			period 25.2683
+	object
+		sprite planet/desert11sxt
+		distance 9808.4
+		period 4055.58
+	object
+		sprite planet/gas10
+		distance 12680.9
+		period 6598.92
+		object
+			sprite planet/ice0sxt
+			distance 292
+			period 26.2646
+	object
+		sprite planet/gas2sxt
+		distance 17561.8
+		period 12163.9
+		object
+			sprite planet/dust0sxt
+			distance 431.671
+			period 21.55
+		object
+			sprite planet/eqr1sxt
+			distance 920.93
+			period 81.522
+			object
+				sprite planet/moonlet14sxt
+				distance 120
+				period 28.1
+			object "Ibn Qurra Station"
+				sprite planet/station2
+				distance 198.15
+				period 49.365
+		object
+			sprite planet/ice0
+			distance 1556.68
+			period 150.203
+
+			
+planet "Ibn Qurra Station"
+	attrbiutes core station research
+	landscape land/space0sxt
+	description `Ibn Qurra Station is a research outpost, named for Thabit ibn Qurra, an ancient polymath who contributed greatly to astronomy and engineering. It is not maintained by the Syndicate but by several groups of physicists and astronomers, most of whom work here to study Thabit-7-II.`
+	description `	For centuries, Iapetus, a moon of Saturn in Sol, baffled scientists with its prominent equatorial ridge. A few other moons have been discovered with this feature, which was believed to be created by tidal interactions with a subsatellite, a sort of moon of a moon. Such a system is incredibly rare and gravitationally unstable, and Thabit-7-II and -IIb are the only known example existing today.`
+	description `	Coincidentally, the star was given two millenia ago the ancient Arabic name Thabit, meaning 'imperturbable one'.`
+
+system Sheratan
+	pos -47 50
+	link "Alpha Hydri"
+	link Nembus
+	link "Mesarthim"
+
+system Zaurak
+	link Taygeta
+	link Menkar
+	link Botein
+	link "Nu Caeli"
+	fleet "Small Southern Pirates" 15000
+	fleet "Large Southern Pirates" 30000
+	fleet "Korath Raid" 80000
+	fleet "Small Core Merchants" 800
+	fleet "Large Core Merchants" 1000
+	fleet "Small Syndicate" 1600
+	fleet "Large Syndicate" 2500
+	fleet "Small Core Pirates" 2000
+	fleet "Large Core Pirates" 4000
+
+system Menkar
+	link Zaurak
+	link "Nu Caeli"
+	link Bellatrix
+	link Mirfak
+	
+system "Nu Caeli"
+	pos -137.448 -22.1958
+	government Syndicate
+	habitable 1715
+	link Menkar
+	link Zaurak
+	asteroids "small rock" 3 4.2042
+	asteroids "medium rock" 5 2.0592
+	asteroids "large rock" 8 1.4586
+	asteroids "medium metal" 5 4.0898
+	asteroids "large metal" 1 4.0326
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	fleet "Small Core Merchants" 1000
+	fleet "Large Core Merchants" 1100
+	fleet "Small Syndicate" 1800
+	fleet "Large Syndicate" 3100
+	fleet "Small Core Pirates" 2000
+	fleet "Large Core Pirates" 4000
+	fleet "Small Southern Pirates" 22000
+	fleet "Large Southern Pirates" 40000
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/rock2
+		distance 429.128
+		period 85.8636
+		offset 112.802
+	object
+		sprite planet/barycenter
+		distance 1095.15
+		period 350.056
+		offset 101.068
+		object
+			sprite planet/rock4sxt
+			distance 131.141
+			period 35
+			offset 180
+		object
+			sprite planet/rock9
+			distance 88.274
+			period 35
+	object
+		sprite planet/rock11sxt
+		distance 2030.47
+		period 883.737
+		offset 359.548
+	object
+		sprite planet/gas4sxt
+		distance 4549.09
+		period 2963.56
+		offset 121.075
+		object
+			sprite planet/rock17
+			distance 329
+			period 25.4957
+		object
+			sprite planet/moonlet13sxt
+			distance 476
+			period 44.3694
+	object
+		sprite planet/ice3sxt
+		distance 7099.73
+		period 5778.17
+		offset 0.467983
+	object
+		sprite planet/gas1
+		distance 8948.87
+		period 8176.74
+		offset 344.473
+		object
+			sprite planet/moonlet2sxt
+			distance 512.784
+			period 46.4106
+			offset 153.819
+		object
+			sprite planet/dust1sxt
+			distance 759.344
+			period 83.6322
+			offset 43.0731
+
+system Taygeta
+	pos -102 -65
+	government Pirate
+	habitable 6100
+	link Zaurak
+	link Alcyone
+	trade Clothing 310
+	trade Electronics 750
+	trade Equipment 673
+	trade Food 174
+	trade "Heavy Metals" 860
+	trade Industrial 774
+	trade "Luxury Goods" 1013
+	trade Medical 671
+	trade Metal 292
+	trade Plastic 376
+	fleet "Large Syndicate" 1100
+	fleet "Small Southern Pirates" 1200
+	fleet "Large Southern Pirates" 1800
+	fleet "Large Core Merchants" 4000
+	fleet "Small Core Pirates" 1200
+	fleet "Large Core Pirates" 1800
+	object
+		sprite star/a0
+		distance 165
+		period 34.7
+	object
+		sprite star/a5
+		distance 180
+		period 34.7
+		offset 180
+	object
+		sprite planet/rock18
+		distance 2239.13
+		period 542.643
+		offset 349.036
+	object
+		sprite planet/gas5sxt
+		distance 12743.5
+		period 7367.65
+		offset 348.02
+		object
+			sprite planet/moonlet6sxt
+			distance 393.336
+			period 38.8667
+			offset 355.55
+		object
+			sprite planet/dust5
+			distance 619.744
+			period 76.8689
+			offset 169.688
+		object
+			sprite planet/luna
+			distance 796.843
+			period 112.071
+			offset 167.721
+	object
+		sprite star/t0sxt
+		distance 30875.3
+		period 27785.1
+		offset 220.806
+
+
+system Botein
+	pos -98.76 6.5
+	government Syndicate
+	habitable 1715
+	link Nembus
+	link Zaurak
+	asteroids "small rock" 2 4.1391
+	asteroids "medium rock" 6 3.7422
+	asteroids "large rock" 2 7.2576
+	asteroids "medium metal" 3 5.6133
+	asteroids "large metal" 2 3.9123
+	trade Clothing 344
+	trade Electronics 764
+	trade Equipment 640
+	trade Food 221
+	trade "Heavy Metals" 730
+	trade Industrial 838
+	trade "Luxury Goods" 1088
+	trade Medical 581
+	trade Metal 363
+	trade Plastic 395
+	fleet "Small Core Merchants" 900
+	fleet "Large Core Merchants" 1700
+	fleet "Small Syndicate" 2000
+	fleet "Large Syndicate" 3600
+	fleet "Small Core Pirates" 2000
+	fleet "Large Core Pirates" 3500
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/gas1sxt
+		distance 975.706
+		period 294.379
+		offset 197.816
+		object
+			sprite planet/rock5sxt
+			distance 299
+			period 13.206
+			offset 346.981
+		object
+			sprite planet/moonlet6sxt
+			distance 430
+			period 22.7755
+			offset 188.545
+		object
+			sprite planet/tethys
+			distance 535
+			period 31.6079
+			offset 169.583
+	object
+		sprite planet/cloud0sxt
+		distance 2064.3
+		period 905.915
+		offset 159.937
+		object
+			sprite planet/dust7
+			distance 225.165
+			period 36.4827
+			offset 84.7843
+	object
+		sprite planet/dust0
+		distance 2620.68
+		period 1295.83
+		offset 347.713
+	object
+		sprite planet/gas17
+		distance 4865.62
+		period 3278.2
+		offset 99.7707
+		object
+			sprite planet/dust9sxt
+			distance 395.597
+			period 33.6166
+			offset 208.821
+		object
+			sprite planet/rock0
+			distance 489.597
+			period 46.2841
+			offset 47.7563
+		object
+			sprite planet/dust4
+			distance 682.415
+			period 76.1633
+			offset 345.47
+			
+system Nembus
+	pos -86.7559 34.4681
+	government Syndicate
+	habitable 1080
+	link Mesarthim
+	link Botein
+	link Sheratan
+	asteroids "small rock" 2 6.1943
+	asteroids "medium rock" 6 2.4739
+	asteroids "large rock" 2 1.4649
+	asteroids "medium metal" 3 6.27658
+	asteroids "large metal" 2 3.9123
+	fleet "Small Core Merchants" 900
+	fleet "Large Core Merchants" 1900
+	fleet "Large Syndicate" 5500
+	fleet "Small Core Pirates" 2200
+	fleet "Large Core Pirates" 3600
+	fleet "Small Syndicate" 2300
+	trade Clothing 344
+	trade Electronics 764
+	trade Equipment 640
+	trade Food 221
+	trade "Heavy Metals" 730
+	trade Industrial 838
+	trade "Luxury Goods" 1088
+	trade Medical 581
+	trade Metal 363
+	trade Plastic 395
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/desert7sxt
+		distance 593.616
+		period 162.345
+	object
+		sprite planet/gas0sxt
+		distance 1874.59
+		period 987.887
+		object
+			sprite planet/desert6sxt
+			distance 533.676
+			period 31.4906
+		object
+			sprite planet/dust4
+			distance 745.257
+			period 51.9665
+		object
+			sprite planet/moonlet14sxt
+			distance 821
+			period 64.1
+	object
+		sprite planet/gas2
+		distance 3446.22
+		period 2462.42
+		object
+			sprite planet/desert9sxt
+			distance 352.852
+			period 19
+		object
+			sprite planet/dust3
+			distance 745.25
+			period 58.9
+		object
+			sprite planet/moonlet13sxt
+			distance 745.25
+			period 58.9
+
+planet "NAME Station"
+	landscape land/
+	attributes station uninhabited
+	description `NAME Station was a Syndicate deuterium refinery that used collections from gas giants in the Nembus and Botein systems. It operated for over a century, but was decommissioned about 60 years ago after a series of breakdowns made it more cost-effective to haul collections to other refineries.`
+	description `	Normally a decommissioned station would have been de-orbited into the gas giant after it was stripped, but structural problems made maneuvering too dangerous, so NAME Station remains in orbital decay.`
+	description `	Although no one will stop you from docking, the station has no atmosphere left and it is eerily empty.`
+
+planet "Omphalos Station"
+	attributes station factory
+	landscape land/space1sxt
+	description `The Free Worlds' colossal Omphalos Station replaced the aging serves as a hub for travel in the area because of the abundance of deuterium in the Nembus system's gas giants, and also one in the neighboring Botein system. The station also allows ships to refuel directly.`
+	spaceport `Unlike other refineries, Omphalos Station has a small promenade with a few shops and cafes, although a lot of spaces are empty for now.`
+	spaceport `	Beyond the work area a few cafes, most of the station is off-limits to non-employees."
+	security 0.1
+	tribute 700
+		threshold 3200
+		fleet "Large Syndicate" 6
+
+system Nekkar
+	pos -219 26.5
+	government Syndicate
+	habitable 1715
+	link Algol
+	link Kugel
+	link Diphda
+	asteroids "small rock" 29 1.8228
+	asteroids "medium rock" 5 2.0286
+	asteroids "large rock" 16 2.3226
+	asteroids "small metal" 12 3.7926
+	asteroids "medium metal" 58 3.9396
+	asteroids "large metal" 1 4.3218
+	trade Clothing 290
+	trade Electronics 740
+	trade Equipment 530
+	trade Food 350
+	trade "Heavy Metals" 960
+	trade Industrial 720
+	trade "Luxury Goods" 1220
+	trade Medical 680
+	trade Metal 390
+	trade Plastic 390
+	fleet "Large Core Merchants" 4200
+	fleet "Small Core Merchants" 3600
+	fleet "Small Republic" 6000
+	fleet "Small Syndicate" 3800
+	fleet "Large Syndicate" 7600
+	fleet "Large Core Pirates" 4900
+	fleet "Small Core Pirates" 3900
+	object
+		sprite star/f5
+		period 10
+	object
+		sprite planet/rock2
+		distance 541.206
+		period 121.611
+		offset 222.978
+	object
+		sprite planet/ice5
+		distance 1591.24
+		period 613.098
+		offset 116.239
+	object
+		sprite planet/gas9
+		distance 3563.5
+		period 2054.68
+		offset 66.4887
+		object
+			sprite planet/dust0
+			distance 240
+			period 13.9414
+		object
+			sprite planet/ice7
+			distance 358
+			period 25.3989
+		object
+			sprite planet/rhea
+			distance 530
+			period 45.7514
+	object
+		sprite planet/gas2
+		distance 5622.59
+		period 4072.23
+		offset 230.184
+		object
+			sprite planet/callisto
+			distance 218
+			period 19.5029
+		object
+			sprite planet/rock7
+			distance 361
+			period 41.56
+		object
+			sprite planet/oberon
+			distance 458
+			period 59.3899
+
+		
+# end of core end of syndicate
+
+# the north
+
+system Mirfak
+	pos -200 -108
+	object
+		sprite star/k5
+		period 10
+	object
+		sprite planet/rock5
+		distance 135.04
+		period 35.0896
+	object Sunracer
+		sprite planet/forest1sxt
+		distance 375.53
+		period 162.724
+	object
+		sprite planet/rock1
+		distance 761.49
+		period 469.874
+		object
+			sprite planet/desert9sxt
+			distance 142
+			period 17.6303
+	object
+		sprite planet/ice8
+		distance 2077.85
+		period 2117.9
+
+	
+system Volax
+	pos -260 -179
+
+system Alcyone
+	pos -138 -81
+	link Oblate
+	link Durax
+	link Taygeta
+	
+system Durax
+	pos -86.5 -90
+
+system Oblate
+	pos -146 -110.5
+	link Alcyone
+	link Moktar
+
+system Moktar
+	pos -196 -149
+	link Oblate
+	link Mirfak
+	link "Gamma Doradus"
+
+system Cardax
+	pos -221 -218
+	government Unclaimed
+	link Volax
+	link Sumar
+	link "Gamma Doradus"
+
+system Ran
+	pos -304.5 -346
+	government Republic
+	habitable 475
+	link Rigel
+	link Hassaleh
+	asteroids "small rock" 22 5.3808
+	asteroids "medium rock" 63 3.9672
+	asteroids "large rock" 11 4.6968
+	asteroids "small metal" 12 5.1528
+	asteroids "medium metal" 1 4.3776
+	asteroids "large metal" 18 3.3744
+	trade Clothing 311
+	trade Electronics 732
+	trade Equipment 665
+	trade Food 528
+	trade "Heavy Metals" 1230
+	trade Industrial 627
+	trade "Luxury Goods" 1243
+	trade Medical 721
+	trade Metal 302
+	trade Plastic 472
+	fleet "Small Northern Merchants" 6000
+	fleet "Large Northern Merchants" 40000
+	fleet "Small Republic" 10000
+	fleet "Large Republic" 14000
+	fleet "Small Northern Pirates" 9000
+	fleet "Large Northern Pirates" 11000
+	object
+		sprite star/k0
+		period 10
+	object
+		sprite planet/desert1sxt
+		distance 156
+		period 36.5126
+	object
+		sprite planet/dust3sxt
+		distance 421.364
+		period 162.085
+	object
+		sprite planet/desert7sxt
+		distance 920.425
+		period 523.285
+		object
+			sprite planet/dust0
+			distance 221.046
+			period 28.5281
+	object
+		sprite planet/gas0sxt
+		distance 3419.97
+		period 3747.92
+		object
+			sprite planet/moonlet7sxt
+			distance 381.99
+			period 18.1537
+		object
+			sprite planet/desert9sxt
+			distance 459.202
+			period 25.1345
+		object
+			sprite planet/ice8
+			distance 633.166
+			period 40.695
+		object
+			sprite planet/moonlet14sxt
+			distance 887.755
+			period 67.5623
+		object
+			sprite planet/moonlet9sxt
+			distance 979.173
+			period 88.9162
+	object
+		sprite planet/rock9sxt
+		distance 6252.79
+		period 9265.47
+		object
+			sprite planet/moonlet2sxt
+			distance 180
+			period 29.5
+	
+system Rigel
+	pos -359 -359
+	link Saiph
+	link Alnitak
+	link Betelgeuse
+	link Ran
+	
+system Rajak
+	government Unclaimed
+
+system Sumar
+	government Unclaimed
+
+system Danoa
+	government Unclaimed
+
+system Hassaleh
+	government Unclaimed
+	link Ran
+	link Sumar
+	link Danoa
+	link Rajak
+	
+
+system "Ultima Thule"
+	pos -316 -215
+	government Unclaimed
+
+system "Gamma Doradus"
+	pos -212 -169
+	habitable 2950
+	government Unclaimed
+	link Cardax
+	link Moktar
+	asteroids "large rock" 1 10.9262
+	asteroids "medium metal" 1 7.2819
+	asteroids "large metal" 1 6.264
+	trade Clothing 339
+	trade Electronics 681
+	trade Equipment 650
+	trade Food 180
+	trade "Heavy Metals" 1023
+	trade Industrial 827
+	trade "Luxury Goods" 1055
+	trade Medical 811
+	trade Metal 451
+	trade Plastic 267
+	fleet "Small Northern Pirates" 1300
+	fleet "Large Northern Pirates" 3200
+	fleet "Small Republic" 3800
+	fleet "Large Republic" 8000
+	fleet "Small Core Merchants" 1800
+	fleet "Large Core Merchants" 2500
+	fleet "Small Syndicate" 3400
+	fleet "Large Syndicate" 6000
+	fleet "Small Core Pirates" 2700
+	object
+		sprite star/f0
+		distance 5
+		period 17
+		offset 180
+	object
+		sprite planet/barycenter
+		distance 100
+		period 17
+		object
+			sprite star/t0sxt
+			distance 24
+			period 10
+			offset 180
+		object
+			sprite star/l2sxt
+			distance 19
+			period 10
+	object
+		sprite planet/rock12sxt
+		distance 1080
+		period 320
+	object
+		sprite planet/desert4sxt
+		distance 1500
+		period 610
+		object
+			sprite planet/desert4
+			distance 163
+			period 19.1
+	object
+		sprite planet/gas11
+		distance 8707.13
+		period 5983.59
+		object
+			sprite planet/rock14
+			distance 309.278
+			period 18.777
+		object
+			sprite planet/moonlet9sxt
+			distance 844.403
+			period 85.9
+		object
+			sprite planet/moonlet14sxt
+			distance 989.863
+			period 102.717
+		object
+			sprite planet/rock11
+			distance 1538.31
+			period 198.997
+
+# end of the north
+
+# These guys are in fact here for a reason.
+# theta muscae
+government "stop cheating"
+	color .01 .01 .01
+
+system "Theta Muscae"
+	pos -1500 3000
+	government "stop cheating"
+	link Lethe
+	habitable 25000
+	object
+		sprite planet/barycenter
+		distance 1500
+		period 5000
+		offset 180
+		object
+			sprite star/wr
+			distance 170
+			period 19
+			offset 180
+		object
+			sprite star/b5
+			distance 250
+			period 19
+	object
+		sprite star/b5
+		distance 6000
+		period 5000
+
+system Lethe
+	pos -1500 3000
+	government "stop cheating"
+	link "Theta Muscae"
+	habitable 1250
+	asteroids "small rock" 1 1.3338
+	asteroids "medium rock" 6 2.7846
+	asteroids "large rock" 8 1.989
+	asteroids "small metal" 1 3.276
+	asteroids "medium metal" 1 2.0592
+	asteroids "large metal" 1 2.0124
+	object
+		sprite star/g0
+		period 10
+	object
+		sprite planet/gas5
+		distance 697.454
+		period 212.688
+		offset 302.047
+		object
+			sprite planet/miranda
+			distance 250
+			period 13
+		object
+			sprite planet/rock10sxt
+			distance 350
+			period 24
+	object "Lethe-2"
+		sprite planet/forest0sxt
+		distance 1500
+		period 704.323
+		object
+			sprite planet/rock13sxt
+			distance 220
+			period 25.5
+	object
+		sprite planet/dust1sxt
+		distance 2086.83
+		period 1160.32
+		object
+			sprite planet/moonlet11sxt
+			distance 150
+			period 18
+	object
+		sprite planet/dust5
+		distance 3233.35
+		period 2237.83
+	object
+		sprite planet/gas8
+		distance 5862.25
+		period 5182.81
+		object
+			sprite planet/ice8
+			distance 369.049
+			period 37.7401
+		object
+			sprite planet/europa
+			distance 469.049
+			period 54.076
+		object
+			sprite planet/moonlet12sxt
+			distance 781.543
+			period 116.307
+	object
+		sprite planet/rock14sxt
+		distance 8517.68
+		period 9568.19
+		object
+			sprite planet/dust2sxt
+			distance 275
+			period 37
+	
+planet "Lethe-2"
+	attributes uninhabited
+	landscape "land/bubblepondsxt"
+	description `	Lethe-2 has never been visited before today by humans, but it is already teeming with familiar-looking life. Forests cover huge swaths of the surface and house all sorts of animals, and likewise marine ecosystems flourish in the waters.`
+	description `	The surface gravity, magnetosphere, atmosphere, and climate are all very similar to those of Earth.`
+
+planet Outlook
+	attributes research uninhabited
+	landscape "land/bubblepondsxt"
+	description `	Outlook was only recently discovered, but it was already teeming with familiar-looking life. Forests cover huge swaths of the surface and house all sorts of animals, and likewise marine ecosystems flourish in the waters.`
+	description `	The surface gravity, magnetosphere, atmosphere, and climate are all very similar to those of Earth, and surveys suggest a reasonable abundance of resources. Although it is still only accessible with a jump drive, this will undoubtedly become a populous world one day.`
+
+# end of theta muscae

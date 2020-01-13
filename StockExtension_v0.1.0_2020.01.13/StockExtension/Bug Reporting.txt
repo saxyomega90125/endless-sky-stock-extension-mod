@@ -1,0 +1,20 @@
+If you find a bug, reporting it will really help me out. I just don't have time to make and
+test every part of this thing.
+
+When you find one, take a screenshot if you can (snipping tool or printscreen) and give a
+brief description. For example, if you are in a conversation and you see something like
+'goto [whatever]' or 'accept', or you get the 'Done' button and it seems premature, send a
+screenshot and tell me what was going on when it happened.
+If you can't get a screenshot, you could quote a few words from the relevant area that I
+can search in the data files - that's really what I'm after. Mission title, phrase from a
+conversation, system name, anything that helps reduce the number of lines to search.
+
+Also, if you want you can attach a snapshot of your save and I can probably repair it for
+you if the bug caused a mission failure or anything like that.
+
+Once you have the info, send it to this email address:
+esssxtbugs@gmail.com
+
+Doing that should take less time than it took to read this, and it will make my job of
+finding and fixing the error behind your bug quick and easy.
+Any help you can give is really appreciated.

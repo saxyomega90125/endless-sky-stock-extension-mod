@@ -1,0 +1,101 @@
+# There may be a few one-time-use shipyards or outfitters in the map or other files.
+
+shipyard "New Boston Upgrade"
+	"Heavy Shuttle"
+
+outfitter "New Boston Upgrade"
+	"Modified Blaster"
+	"Beam Laser"
+	"Chipmunk Plasma Thruster"
+	"Chipmunk Plasma Steering"
+	"KP-6 Photovoltaic Panel"
+	"Fuel Pod"
+	"Bunk Room"
+	"Small Bunk Room"
+	"D23-QP Shield Generator"
+	"nGVF-CC Fuel Cell"
+
+shipyard "New Boston Upgrade 2"
+	"Fury"
+	"Berserker"
+
+outfitter "New Boston Upgrade 2"
+	"RT-I Radiothermal"
+	"Sidewinder Missile"
+	"KP-6 Photovoltaic Panel"
+	"Ramscoop"
+	"Asteroid Scanner"
+
+outfitter Chasm
+	"Energy Blaster"
+	"Beam Laser"
+	"Modified Blaster"
+	"X1700 Ion Thruster"
+	"X1200 Ion Steering"
+	"X2700 Ion Thruster"
+	"X2200 Ion Steering"
+	"Chipmunk Plasma Steering"
+	"Chipmunk Plasma Thruster"
+	"KP-6 Photovoltaic Panel"
+	"KP-6 Photovoltaic Array"
+	"LP036a Battery Pack"
+	"LP072a Battery Pack"
+	"nGVF-AA Fuel Cell"
+	"nGVF-BB Fuel Cell"
+	"Cooling Ducts"
+	"D14-RN Shield Generator"
+	"Hyperdrive"
+	"Meteor Missile"
+	"Meteor Missile Launcher"
+	"Javelin"
+	"Javelin Launcher"
+	"Local Map
+	"Laser Rifle"
+
+outfitter Trinket
+	"Modified Blaster"
+	"Modified Blaster Turret"
+	"Plasma Cannon"
+	"Laser Rifle"
+	"Fragmentation Grenades"
+	"Scram Drive"
+	"Local Map"
+
+outfitter Zug
+	"Heavy Laser"
+	"Anti-Missile Turret"
+	"Laser Turret"
+	"LP288a Battery Pack"
+
+outfitter kraz
+	"Sidewinder Missile"
+
+outfitter rifle
+	"Laser Rifle"
+
+outfitter grenades
+	"Fragmentation Grenades"
+
+outfitter security
+	"Security Station"
+
+shipyard haulers
+	Hauler
+	"Hauler II"
+
+shipyard frigate
+	Frigate
+
+outfitter fission
+	"Fission Reactor"
+	"Liquid Nitrogen Cooler"
+	"Liquid Helium Cooler"
+
+outfitter alnitak
+	"Heavy Laser"
+	"Laser Turret"
+
+shipyard alnitak
+	Lance
+	"Combat Drone"
+	"Surveillance Drone"

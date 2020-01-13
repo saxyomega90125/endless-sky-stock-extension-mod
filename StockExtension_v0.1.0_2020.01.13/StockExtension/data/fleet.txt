@@ -1,0 +1,146 @@
+fleet "NB Merchants"
+	government "Merchant"
+	names "civilian"
+	cargo 3
+	personality
+		confusion 40
+		timid frugal
+	variant 60
+		"Shuttle"
+	variant 40
+		"Shuttle" 2
+	variant 25
+		"Shuttle" 2
+		"Sparrow"
+	variant 60
+		"Star Barge"
+	variant 45
+		"Star Barge (Armed)"
+	variant 40
+		"Star Barge" 2
+	variant 35
+		"Star Barge (Armed)"
+		"Star Barge"
+	variant 30
+		"Star Barge (Armed)" 2
+	variant 35
+		"Star Barge"
+		"Sparrow"
+	variant 60
+		"Sparrow"
+	variant 30
+		"Sparrow" 2
+	variant 20
+		"Sparrow" 3
+	variant 20
+		"Shuttle"
+		"Star Barge (Armed)"
+		"Sparrow"
+	vsriant 40
+		"Berserker"
+	variant 25
+		"Berserker"
+		"Sparrow"
+	variant 20
+		"Berseker"
+		"Star Barge"
+	variant 15
+		"Berserker"
+		"Star Barge (Armed)"
+	variant 15
+		"Berserker"
+		"Shuttle"
+	variant 10
+		"Berserker" 2
+	variant 50
+		"Heavy Shuttle"
+	variant 40
+		"Heavy Shuttle (Armed)"
+	variant 30
+		"Heavy Shuttle"
+		"Sparrow"
+	variant 25
+		"Heavy Shuttle (Armed)"
+		"Sparrow"
+	variant 30
+		"Heavy Shuttle"
+		"Shuttle"
+	variant 25
+		"Heavy Shuttle (Armed)"
+		"Shuttle"
+	variant 30
+		"Heavy Shuttle (Armed)"
+		"Star Barge"
+	variant 25
+		"Heavy Shuttle (Armed)"
+		"Star Barge (Armed
+	variant 35
+		"Heavy Shuttle"
+		"Star Barge"
+	variant 30
+		"Heavy Shuttle"
+		"Star Barge (Armed)"
+	variant 10
+		"Berserker"
+		"Star Barge" 2
+	variant 10
+		"Berserker"
+		"Star Barge (Armed)"
+		"Star Barge"
+	variant 8
+		"Berserker"
+		"Star Barge (Armed)" 2
+	variant 10
+		"Fury"
+		"Star Barge" 2
+	variant 10
+		"Fury"
+		"Star Barge (Armed)"
+		"Star Barge"
+	variant 8
+		"Fury"
+		"Star Barge (Armed)" 2
+	vsriant 50
+		"Fury"
+	variant 30
+		"Fury"
+		"Sparrow"
+	variant 20
+		"Fury"
+		"Star Barge"
+	variant 15
+		"Fury"
+		"Star Barge (Armed)"
+	variant 15
+		"Fury"
+		"Shuttle"
+	variant 30
+		"Fury (Laser)"
+	variant 10
+		"Fury"
+		"Berserker"
+	variant 25
+		"Fury"
+		"Sparrow"
+	variant 8
+		"Fury" 2
+	variant 15
+		"Fury (Laser)"
+		"Sparrow"
+	variant 7
+		"Fury (Laser)"
+		"Berserker"
+	variant 10
+		"Freighter"
+	variant 8
+		"Freighter"
+		"Sparrow"
+	variant 6
+		"Freighter"
+		"Berserker"
+	variant 4
+		"Freighter"
+		"Fury"
+	variant 3
+		"Freighter"
+		"Fury (Laser)"

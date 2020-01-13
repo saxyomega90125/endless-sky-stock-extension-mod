@@ -1,0 +1,80 @@
+Stock Extension, Version 0.1.5		Made for Endless Sky v0.8.11
+
+Stock Extension, or SXT, offers minor revisions to Endless Sky in areas I felt it was a little lacking, and additions to add
+	depth and help it continue to flesh out its story. The idea is for the changes to blend so well you don't even notice most
+	of them, but if you want to see a notable example, just drop by the Sol system the next time you get a chance - you might
+	spot some things that weren't there before.
+Also, the resources here are of course under the GNU license, so if you would like to use them in your own stuff, please do.
+	I would appreciate a credits mention if you do, but to keep things simple just credit the Stock Extension mod itself.
+Heading list:
+	How to Install
+	Credits
+	Changelog
+	To Do List
+
+
+How to Install:
+	I'm pretty sure this information is available on the Endless Sky wiki, but I'll give directions for Windows 7 and up anyway.
+	This is for the non-Steam version.
+	Find and open the following folder:
+			C:  >  Users  >  [you]  >  AppData  >  Roaming  >  endless-sky  >  plugins
+	Just drag StockExtension from its zip file into that folder or your OS's equivalent and boot up the game. That's it!
+	If you want to back up your saves, they are kept near the plugins folder. Shouldn't be necessary but it can never hurt.
+	Don't forget to check for updates to SXT, and if you notice any bugs please let me know so I can fix them.
+	To update SXT, just copy and overwrite right over the old version, unless otherwise specified at the download (and here).
+
+Note for existing saves:
+	While the map will update in an existing save when you load the game with SXT, and give you unexplored systems to visit, many
+		of the conversations you can have won't be able to occur if you're past a certain point. For example, if you've already
+		completed the plot, you can only visit James once; however, Captains Wilkes, one of the recurring characters added by
+		SXT, must first be met through a visit with James that must take place between the formation of the Free Worlds and the
+		player's choice of sides.
+	You have two options to fix this problem. First, just start a new save. Second, and I would only recommend this if you have
+		experience editing .sav and .cfg files - if you're reading this in the default Windows Notepad, that probably isn't you -
+		you can read through the data files in SXT, go through the conversations manually, and edit a snapshot to include whatever
+		conditions you want to append. This will trick the game into thinking that you went through the missions you adjusted.
+
+
+
+Credits:
+	Modding and Related Writing
+		Sean Reeser
+	Photos and Artwork
+		Sean Reeser
+		NASA
+		RKA
+		SpaceEngine
+		voyager168 (DeviantArt)
+	Testing
+		John Lawlor
+	Hats off to Michael Zanhiser for making such a good game, making it free to boot, and giving me permission do these things.
+	Lastly, thank you, for playing Endless Sky, for downloading Stock Extension, and for actually reading this. I hope you enjoy the game.
+		- Sean
+
+
+
+Changelog:
+	v0.1.0
+		First distribution
+	Nameless versions
+		Added .ico file for Endless Sky (but not attached to .exe; requires shortcut)
+		Added landscape pictures
+		Added a bunch of planet sprites
+		Added two brown dwarf star sprites
+		Added barycenter mechanism for binary planets
+		Modified existing systems to include new sprites
+		Added bunches of new systems, mostly in Core
+		Added pirate system in Dirt Belt
+		Moved Alpha Centauri closer to Sol
+		Modified Deneb system to look more like Deneb and also be HUUUUUUGE
+		Added more hails
+		Handful of typo fixes
+
+
+To Do List:
+	Remember James? Add opportunites to interact with James throughout the game - IN PROGRESS
+	Add a couple of minor plots and recurring characters - IN PROGRESS
+	Fix Callisto so it is a function-neutered station if possible - IN PROGRESS
+	Add an interplanetary shuttle (to ramp up activity in multi-planet systems)
+	Make it economically and strategically viable to become a criminal, either a pirate or smuggler
+	Fix tyops as noticed - ALWAYS IN PROGRESS
